@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct EventRepositoryImpl: EventRepository{
+    var dataSource: EventRepository
+    func getEvents() -> [Event] {
+        return dataSource.getEvents()
+    }
+    
+    func createEvent(event: Event) -> Event? {
+        return dataSource.createEvent(event: event)
+    }
+    
+}

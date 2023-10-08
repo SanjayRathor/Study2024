@@ -6,3 +6,24 @@
 //
 
 import Foundation
+public class HowToCodeCoordinator: Coordinator {
+   
+    // MARK: - Instance Properties
+    public var children: [Coordinator] = []
+    public let router: Router
+    
+    // MARK: - Object Lifecycle
+    public init(router: Router) {
+        self.router = router
+    }
+    
+    // MARK: - Coordinator
+    public func present(animated: Bool,
+                        onDismissed: (() -> Void)?) {
+//      let viewController = stepViewControllers.first!
+//      router.present(viewController,
+//                     animated: animated,
+//                     onDismissed: onDismissed)
+    }
+    
+}

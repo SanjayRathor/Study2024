@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Event: Identifiable {
+    var id: UUID = .init()
+    var title: String
+    var description: String
+    var date: Date
+}

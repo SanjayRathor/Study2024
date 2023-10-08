@@ -7,6 +7,14 @@
 
 import UIKit
 
-class CombineBasic: NSObject {
-
-}
+//@propertyWrapper
+//struct BasicWrapper {
+//    let wrappedValue: String
+//    init(wrappedValue: String) {
+//        self.wrappedValue = wrappedValue
+//    }
+//}
+//
+//class DemoStruct {
+//    @BasicWrapper var value = "demo"
+//}

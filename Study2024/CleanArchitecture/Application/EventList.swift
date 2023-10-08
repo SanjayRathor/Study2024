@@ -7,28 +7,28 @@
 
 import SwiftUI
 
-struct EventList: View {
-    @StateObject var vm = EventListViewModel()
-    
-    var body: some View {
-        NavigationStack {
-            List {
-                ForEach(vm.events){ event in
-                    VStack (alignment: .leading, spacing: 4) {
-                        Text(event.title)
-                        Text(event.date.formatted())
-                    }
-                }
-            }
-            .navigationTitle("Todo List")
-            .toolbar {
-                Button("Add") {
-                    vm.createEvent()
-                }
-            }
-            .onAppear {
-                vm.getEvents()
-            }
-        }
-    }
-}
+//struct EventList: View {
+//    @StateObject var vm = EventListViewModel()
+//    
+//    var body: some View {
+//        NavigationStack {
+//            List {
+//                ForEach(vm.events){ event in
+//                    VStack (alignment: .leading, spacing: 4) {
+//                        Text(event.title)
+//                        Text(event.date.formatted())
+//                    }
+//                }
+//            }
+//            .navigationTitle("Todo List")
+//            .toolbar {
+//                Button("Add") {
+//                    vm.createEvent()
+//                }
+//            }
+//            .onAppear {
+//                vm.getEvents()
+//            }
+//        }
+//    }
+//}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+protocol EventRepository{
+    func getEvents() -> [Event]
+    func createEvent(event: Event) -> Event?
+}
