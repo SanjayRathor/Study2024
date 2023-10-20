@@ -28,6 +28,9 @@
 		B58DE6D42ABF5D8100B0BF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58DE6D32ABF5D8100B0BF1F /* Assets.xcassets */; };
 		B58DE6D72ABF5D8100B0BF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58DE6D52ABF5D8100B0BF1F /* LaunchScreen.storyboard */; };
 		B59AC4AE2ACF3AF9000A3340 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AC4AD2ACF3AF9000A3340 /* ViewModel.swift */; };
+		B5D1AAF72ADC09340019F0EA /* CombileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1AAF62ADC09340019F0EA /* CombileViewController.swift */; };
+		B5DF80A32ADB1BB000BD5BC6 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF80A22ADB1BB000BD5BC6 /* MovieViewModel.swift */; };
+		B5DF80A52ADB1BE400BD5BC6 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF80A42ADB1BE400BD5BC6 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		B58DE6D82ABF5D8100B0BF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59AC4AD2ACF3AF9000A3340 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5CA66512AC5A32E002D521F /* SwiftBasicMyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftBasicMyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B5D1AAF62ADC09340019F0EA /* CombileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombileViewController.swift; sourceTree = "<group>"; };
+		B5DF80A22ADB1BB000BD5BC6 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		B5DF80A42ADB1BE400BD5BC6 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,9 @@
 				B58DE6CC2ABF5D7F00B0BF1F /* SceneDelegate.swift */,
 				B58DE6CE2ABF5D7F00B0BF1F /* ViewController.swift */,
 				B59AC4AD2ACF3AF9000A3340 /* ViewModel.swift */,
+				B5DF80A22ADB1BB000BD5BC6 /* MovieViewModel.swift */,
+				B5D1AAF62ADC09340019F0EA /* CombileViewController.swift */,
+				B5DF80A42ADB1BE400BD5BC6 /* DataProvider.swift */,
 				B58DE6D02ABF5D7F00B0BF1F /* Main.storyboard */,
 				B58DE6D32ABF5D8100B0BF1F /* Assets.xcassets */,
 				B58DE6D52ABF5D8100B0BF1F /* LaunchScreen.storyboard */,
@@ -261,11 +270,13 @@
 			files = (
 				B570796E2AC0495B00DA2BB6 /* EventRepositoryImpl.swift in Sources */,
 				B57079662AC0400200DA2BB6 /* Entity.swift in Sources */,
+				B5DF80A52ADB1BE400BD5BC6 /* DataProvider.swift in Sources */,
 				B52495F62AC9D7A00094DCFC /* NavigationRouter.swift in Sources */,
 				B58DE6CF2ABF5D7F00B0BF1F /* ViewController.swift in Sources */,
 				B58945F82AC2B9AD00E46805 /* CombineBasic.swift in Sources */,
 				B57079702AC0499400DA2BB6 /* EventListViewModel.swift in Sources */,
 				B570796A2AC0408200DA2BB6 /* EventUseCases.swift in Sources */,
+				B5DF80A32ADB1BB000BD5BC6 /* MovieViewModel.swift in Sources */,
 				B52495F22AC9D7740094DCFC /* Coordinator.swift in Sources */,
 				B52495F42AC9D78D0094DCFC /* Router.swift in Sources */,
 				B58DE6CB2ABF5D7F00B0BF1F /* AppDelegate.swift in Sources */,
@@ -274,6 +285,7 @@
 				B52495FA2AC9D7BF0094DCFC /* HowToCodeCoordinator.swift in Sources */,
 				B570796C2AC0485A00DA2BB6 /* EventCoreDataImpl.swift in Sources */,
 				B57079722AC049C900DA2BB6 /* EventList.swift in Sources */,
+				B5D1AAF72ADC09340019F0EA /* CombileViewController.swift in Sources */,
 				B57079682AC0405E00DA2BB6 /* EventRepository.swift in Sources */,
 				B52495F02AC9D6C10094DCFC /* DetailsViewController.swift in Sources */,
 				B52495EE2AC9D6870094DCFC /* HomeViewController.swift in Sources */,

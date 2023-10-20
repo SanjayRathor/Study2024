@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-struct MyDataClass: Codable {
+public struct MyDataClass: Codable {
     let original: String
     let md5: Int
 }
@@ -21,15 +21,29 @@ class ViewController: UIViewController {
     var session =  URLSession.shared
     let subject = PassthroughSubject<Data, URLError>()
     var viewModel:ViewModel?
+    
+    let dataProvider =  DataProvider()
     override func viewDidLoad() {
         super.viewDidLoad()
         multicastPublisher()
        //sharePublisher()
        //fetch()
        //multiCast()
+        //viewModel = ViewModel()
+        //viewModel?.postNotificsation()
+        dataProvider.fetch()
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    print("Completed")
+                case .failure(let err):
+                    print("err")
+                }
+            } receiveValue: { models in
+                print("models value \(models)")
+        }
+
         
-        viewModel = ViewModel()
-        viewModel?.postNotificsation()
     }
 
     func multicastPublisher() {
@@ -94,6 +108,15 @@ class ViewController: UIViewController {
               print("Retrieved object \(object)")
         })
     }
+  
+  URLSession.shared
+  .dataTaskPublisher(for: constrainedRequest) .tryCatch({ error -> URLSession.DataTaskPublisher in
+  guard error.networkUnavailableReason == .constrained else { throw error
+  }
+  return session.dataTaskPublisher(for: normalRequest) })
+  .sink(receiveCompletion: { completion in // handle completion
+  }, receiveValue: { result in // handle received data
+  })
   */
     
     func multiCast() {

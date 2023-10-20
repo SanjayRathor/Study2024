@@ -28,6 +28,7 @@ class ViewModel: NSObject {
         ///flatMapPublisher()
         ///mapPublisher()
         simplePublisher()
+        loadFeeds()
         
     }
     
@@ -62,7 +63,7 @@ class ViewModel: NSObject {
     }
     
     func flatMapPublisher() {
-
+        
         weatherPublisher.flatMap(maxPublishers: .max(1)) {  station -> URLSession.DataTaskPublisher in
             let url = URL(string:"https://jsonplaceholder.typicode.com/posts/\(station.stationID)")!
             return URLSession.shared.dataTaskPublisher(for: url)
@@ -121,33 +122,63 @@ class ViewModel: NSObject {
     func simplePublisher() {
         let userSubject = PassthroughSubject<User, Never>()
         userSubject
-           .map { $0.name }
-           .switchToLatest()
-           .sink { print($0) }
-           .store(in: &subscriptions)
+            .map { $0.name }
+            .switchToLatest()
+            .sink { print($0) }
+            .store(in: &subscriptions)
         
         userSubject
-           .flatMap { $0.name }
-           .sink { print($0) }
-           .store(in: &subscriptions)
-
+            .flatMap { $0.name }
+            .sink { print($0) }
+            .store(in: &subscriptions)
+        
         let user = User(name: .init("User 1"))
         userSubject.send(user)
         
-       /* userSubject
-           .flatMap(maxPublishers: .max(1)) { $0.name }
-           .sink { print($0) }
-
-        let user = User(name: .init("User 1"))
-        userSubject.send(user)
-
-        let anotherUser = User(name: .init("AnotherUser 1"))
-        userSubject.send(anotherUser)
-
-        anotherUser.name.send("AnotherUser 2")
-
-        user.name.send("User 2")
-        */
+        /* userSubject
+         .flatMap(maxPublishers: .max(1)) { $0.name }
+         .sink { print($0) }
+         
+         let user = User(name: .init("User 1"))
+         userSubject.send(user)
+         
+         let anotherUser = User(name: .init("AnotherUser 1"))
+         userSubject.send(anotherUser)
+         
+         anotherUser.name.send("AnotherUser 2")
+         
+         user.name.send("User 2")
+         */
         
+    }
+}
+
+
+
+extension ViewModel {
+    func requestData() -> AnyPublisher<Data, URLError>  {
+        let myUrl = URL(string: "https://www.donnywals.com")!
+        return URLSession.shared.dataTaskPublisher(for: myUrl)
+            .map(\.data)
+            .eraseToAnyPublisher()
+    }
+    
+    
+    func loadFeeds() {
+        var baseURL = URL(string: "https://www.donnywals.com")!
+        
+        ["/", "/the-blog", "/speaking", "/newsletter"].publisher
+            .print()
+            .setFailureType(to: URLError.self)
+            .flatMap(maxPublishers: .max(1)) { path -> URLSession.DataTaskPublisher in
+                let url = baseURL.appendingPathComponent(path)
+                return URLSession.shared.dataTaskPublisher(for: url)
+            }
+            .sink(receiveCompletion: { completion in
+                print("Completed with: \(completion)")
+            },
+            receiveValue: { result in
+                print(result)
+            }).store(in: &subscriptions)
     }
 }

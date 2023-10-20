@@ -20,6 +20,9 @@ func notifications() {
 }
 
 notifications()
+
+
+
 /*
  func assigning() {
  class SomeObject {
@@ -416,82 +419,82 @@ func display() {
      
      publisher.send(Coordinate(x: 10, y: -8))
      publisher.send(Coordinate(x: 0, y: 5))
-    
-    
-    Just("Directory name that does not exist")
-        .tryMap { try
-            FileManager.default.contentsOfDirectory(atPath: $0) }
-        .sink(receiveCompletion: { print($0) },
-              receiveValue: { print($0) })
-        .store(in: &subscriptions)
+     
+     
+     Just("Directory name that does not exist")
+     .tryMap { try
+     FileManager.default.contentsOfDirectory(atPath: $0) }
+     .sink(receiveCompletion: { print($0) },
+     receiveValue: { print($0) })
+     .store(in: &subscriptions)
      */
-
     
-   /* publisher.flatMap(maxPublishers: .max(2), publisher2)
-    .sink { completion in
-        print("\n\(completion)")
-    } receiveValue: { value in
-        print("\(value)")
-    }
     
-    ["A", nil, "C"].publisher
-        .eraseToAnyPublisher()
-        .replaceNil(with: "-") // 2
-        .sink(receiveValue: { print($0) }) // 3
-        .store(in: &subscriptions)
+    /* publisher.flatMap(maxPublishers: .max(2), publisher2)
+     .sink { completion in
+     print("\n\(completion)")
+     } receiveValue: { value in
+     print("\(value)")
+     }
+     
+     ["A", nil, "C"].publisher
+     .eraseToAnyPublisher()
+     .replaceNil(with: "-") // 2
+     .sink(receiveValue: { print($0) }) // 3
+     .store(in: &subscriptions)
+     
+     let intPublisher = [1, 2, 3].publisher
+     .scan(10) { latest, current in
+     print("latest - \(latest)")
+     print("current - \(current)")
+     return latest + current
+     }
+     .sink { value in
+     // print("\(value)")
+     }
+     */
     
-    let intPublisher = [1, 2, 3].publisher
-        .scan(10) { latest, current in
-            print("latest - \(latest)")
-            print("current - \(current)")
-            return latest + current
-        }
-        .sink { value in
-           // print("\(value)")
-        }
-    */
-    
-//    let intPublisher = [[1, 2],[ 3],[ 3],[ 3],[ 3],[ 3],[ 3],[ 3]].publisher
-//        .flatMap(maxPublishers: .max(1), { items in
-//            items.publisher
-//                .
-//        })
-//        .sink { value in
-//             print("\(value)")
-//         }
+    //    let intPublisher = [[1, 2],[ 3],[ 3],[ 3],[ 3],[ 3],[ 3],[ 3]].publisher
+    //        .flatMap(maxPublishers: .max(1), { items in
+    //            items.publisher
+    //                .
+    //        })
+    //        .sink { value in
+    //             print("\(value)")
+    //         }
 }
 
 //display()
 
 func flatPublisher() {
-   /* let userSubject = PassthroughSubject<User, Never>()
+    /* let userSubject = PassthroughSubject<User, Never>()
+     
+     userSubject
+     .map { $0.name }
+     .switchToLatest()
+     //        .flatMap(maxPublishers: .max(1)) { $0.name }
+     .sink { print($0) }
+     
+     let user = User(name: .init("User 1"))
+     userSubject.send(user)
+     
+     
+     let anotherUser = User(name: .init("AnotherUser 1"))
+     userSubject.send(anotherUser)
+     
+     let anotherUser2 = User(name: .init("AnotherUser 3"))
+     userSubject.send(anotherUser2)
+     
+     
+     //    (0..<10).flatMap({ _ in
+     //        let user = User(name: .init("User 1"))
+     //        userSubject.send(user)
+     //    })
+     */
     
-    userSubject
-        .map { $0.name }
-           .switchToLatest()
-//        .flatMap(maxPublishers: .max(1)) { $0.name }
-          .sink { print($0) }
     
-    let user = User(name: .init("User 1"))
-    userSubject.send(user)
-
-
-    let anotherUser = User(name: .init("AnotherUser 1"))
-    userSubject.send(anotherUser)
-    
-    let anotherUser2 = User(name: .init("AnotherUser 3"))
-    userSubject.send(anotherUser2)
-    
-
-//    (0..<10).flatMap({ _ in
-//        let user = User(name: .init("User 1"))
-//        userSubject.send(user)
-//    })
-    */
-    
-
-     let weatherPublisher = PassthroughSubject<WeatherStation, URLError>()
-     weatherPublisher.flatMap { station -> URLSession.DataTaskPublisher in
+    let weatherPublisher = PassthroughSubject<WeatherStation, URLError>()
+    weatherPublisher.flatMap { station -> URLSession.DataTaskPublisher in
         let url = URL(string:"https://weatherapi.example.com/stations/\(station.stationID)/observations/latest")!
         return URLSession.shared.dataTaskPublisher(for: url)
     }
@@ -502,13 +505,13 @@ func flatPublisher() {
         receiveValue: {value in
             print("\(value)")
         }
-     )
-
-
+    )
+    
+    
     weatherPublisher.send(WeatherStation(stationID: "KSFO")) // San Francisco, CA
     weatherPublisher.send(WeatherStation(stationID: "EGLC")) // London, UK
     weatherPublisher.send(WeatherStation(stationID: "ZBBB")) // Beijing, CN
-
+    
 }
 
 public struct WeatherStation {
@@ -516,11 +519,108 @@ public struct WeatherStation {
 }
 
 struct User {
-   let name: CurrentValueSubject<String, Never>
+    let name: CurrentValueSubject<String, Never>
 }
 //var subscriptions = Set<AnyCancellable>()
 
 flatPublisher()
 
+
+
+//enum MyError: Error {
+//    case outOfBounds
+//}
+//[1, 2, 3].publisher .tryMap({ int in
+//    guard int < 3 else {
+//        throw MyError.outOfBounds
+//    }
+//    return int * 2 })
+//.sink(receiveCompletion: { completion in
+//    print(completion)
+//}, receiveValue: { val in print(val)
+//})
+
+/*
+ @propertyWrapper
+ struct Wrapper<T> {
+ var wrappedValue: T
+ var projectedValue: Wrapper<T> { return self }
+ func foo() { print("Foo") }
+ }
+ 
+ struct HasWrapper {
+ @Wrapper var x: Int
+ 
+ 
+ func foo() {
+ print(x) // `wrappedValue`
+ print(_x) // wrapper type itself
+ print($x) // `projectedValue`
+ }
+ 
+ }
+ ///We can access the wrapper type by adding an underscore to the variable name:
+ let a = HasWrapper(x: 10)
+ a.foo()
+ print(a.$x)
+ 
+ var cancellables = Set<AnyCancellable>()
+ 
+ let left = CurrentValueSubject<Int, Never>(0)
+ let right = CurrentValueSubject<Int, Never>(0)
+ 
+ //.zip(<#T##other: Publisher##Publisher#>)
+ left.merge(with:right)
+ .sink(receiveValue: { value in
+ print("Print:- \(value)")
+ }).store(in: &cancellables)
+ 
+ 
+ 
+ var cancellables = Set<AnyCancellable>()
+ let left = CurrentValueSubject<Int, Never>(0)
+ let right = CurrentValueSubject<Int, Never>(0)
+ 
+ let combined = left.combineLatest(right).sink(receiveValue: {
+ val in
+ print(val, "combined")
+ }).store(in: &cancellables)
+ 
+ left.value = 1
+ left.value = 2
+ left.value = 3
+ right.value = 1
+ //right.value = 2
+ //right.value = 2
+ */
+//func createFuture() -> Future<Int, Never> {
+//    return Future { promise in
+//        promise(.success(Int.random(in: (1...100)))) }
+//}
+//
+//func createDeferredFuture() -> Deferred<Future<Int, Never>> {
+//    return Deferred {
+//          return Future { promise in promise(.success(Int.random(in: (1..<Int.max))))
+//    }
+//   }
+//}
+/////The publisher will not perform work until it has subscribers
+/////If you subscribe to the same instance of this publisher more than once, the work will be repeated
+//
+//createFuture()
+
+var cancellables = Set<AnyCancellable>()
+let publisher = [1, 2, 3].publisher
+let subject = PassthroughSubject<Int, Never>()
+
+subject
+    .sink(receiveValue: { receivedInt in
+        print("subject", receivedInt)
+    })
+    .store(in: &cancellables)
+
+publisher.subscribe(subject)
+publisher.subscribe(subject)
+.store(in: &cancellables)
 
 
