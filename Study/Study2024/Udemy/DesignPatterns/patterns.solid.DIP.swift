@@ -3,7 +3,8 @@ import Foundation
 // hl modules should not depend on low-level; both should depend on abstractions
 // abstractions should not depend on details; details should depend on abstractions
 
-enum Relationship
+/*
+ enum Relationship
 {
   case parent
   case child
@@ -75,4 +76,4 @@ func main()
   let _ = Research(relationships)
 }
 
-main()
+*/

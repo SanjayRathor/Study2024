@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "744B1B24-72EF-419E-B2A2-83557EBD01DD",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

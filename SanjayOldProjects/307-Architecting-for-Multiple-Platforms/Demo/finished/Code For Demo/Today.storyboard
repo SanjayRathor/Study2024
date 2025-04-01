@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="VoteViewController" customModule="RVoteTodayExtension" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYB-bc-xvL" userLabel="Poll View" customClass="PollBox" customModule="RVoteKit">
+                                <rect key="frame" x="36" y="125" width="248" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="j7g-Az-1IY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pollText" value="Who is the coolest Wenderlich team member?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jve" translatesAutoresizingMaskIntoConstraints="NO" id="r7W-J7-8nn">
+                                <rect key="frame" x="32" y="5" width="252" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TUx-Ma-e9N"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5uq-7N-kr4">
+                                <rect key="frame" x="21" y="209" width="278" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1a-Rz-gbo" customClass="VoteButton" customModule="RVoteKit">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KL-Ag-YzX" customClass="VoteButton" customModule="RVoteKit">
+                                        <rect key="frame" x="0.0" y="34" width="278" height="28"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5uq-7N-kr4" firstAttribute="top" secondItem="fYB-bc-xvL" secondAttribute="bottom" constant="20" id="4UJ-pO-tgg"/>
+                            <constraint firstItem="r7W-J7-8nn" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" priority="999" constant="5" id="Gab-nl-IeH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fYB-bc-xvL" secondAttribute="trailing" constant="20" id="Gx9-ij-Jax"/>
+                            <constraint firstItem="r7W-J7-8nn" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="16" id="Ifv-8B-dVh"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="5uq-7N-kr4" secondAttribute="bottom" priority="999" constant="5" id="Qgj-yC-Zue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5uq-7N-kr4" secondAttribute="trailing" constant="5" id="aqz-E0-9tV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r7W-J7-8nn" secondAttribute="trailing" constant="20" id="mGo-AL-7mK"/>
+                            <constraint firstItem="5uq-7N-kr4" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="5" id="rkv-fq-UMv"/>
+                            <constraint firstItem="fYB-bc-xvL" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="20" id="svN-g9-TiY"/>
+                            <constraint firstItem="fYB-bc-xvL" firstAttribute="top" secondItem="r7W-J7-8nn" secondAttribute="bottom" constant="20" id="yot-Ba-Vpj"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="276"/>
+                    <connections>
+                        <outlet property="buttonStackView" destination="5uq-7N-kr4" id="Ada-EO-Ejv"/>
+                        <outlet property="pollBox" destination="fYB-bc-xvL" id="m46-P8-VVb"/>
+                        <outlet property="pollPic" destination="r7W-J7-8nn" id="pUx-9s-Xss"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jve" width="518" height="360"/>
+    </resources>
+</document>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Atami_Bold.otf">
+            <string>Atami-Bold</string>
+        </array>
+        <array key="Atami_Reguler.otf">
+            <string>Atami-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="276" id="KGk-i7-Jjw" userLabel="CommentsTableViewCell" customClass="CommentsTableViewCell" customModule="FandomLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="30j-Q0-W4T">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="aGy-aS-6S4"/>
+                            <constraint firstAttribute="width" constant="60" id="dBG-gZ-EuA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7F-kU-7gq">
+                        <rect key="frame" x="80" y="15" width="359" height="18"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="15"/>
+                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="367" placeholderIntrinsicHeight="50.5" text="Lorem Ipsum is simply dummy text of  the printing and typesetting industry. Lorem Ipsum is simply dummy text of  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY0-VF-l8c">
+                        <rect key="frame" x="80" y="174.5" width="359" height="50.5"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6n-l7-D7v">
+                        <rect key="frame" x="80" y="242" width="39" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="8uL-i7-BKC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="14"/>
+                        <state key="normal" title="0 Like">
+                            <color key="titleColor" red="0.89019607840000003" green="0.098039215690000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="likeButtonDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1gd-Lo-1gJ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-OY-rh2">
+                        <rect key="frame" x="143" y="242" width="46" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="v8e-Fu-PhD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="14"/>
+                        <state key="normal" title="Replies">
+                            <color key="titleColor" red="0.89019607840000003" green="0.098039215690000001" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="replayDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e97-7g-ugQ"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zh-F3-zkT">
+                        <rect key="frame" x="129" y="252" width="4" height="4"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="GQ8-FC-SPF"/>
+                            <constraint firstAttribute="height" constant="4" id="fYw-jX-Sob"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-uf-LIX">
+                        <rect key="frame" x="354" y="235" width="85" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="l23-6y-pBt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="14"/>
+                        <state key="normal" title="View Replies">
+                            <color key="titleColor" red="0.89019607840000003" green="0.098039215690000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="viewRepliesButtonDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fQ9-pe-SVz"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="367" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-LB-yEm">
+                        <rect key="frame" x="80" y="43" width="359" height="121.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="qzE-Em-jie"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="30j-Q0-W4T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2S0-pk-rhP"/>
+                    <constraint firstAttribute="trailing" secondItem="a7F-kU-7gq" secondAttribute="trailing" constant="10" id="3K6-6S-d3U"/>
+                    <constraint firstItem="cMK-LB-yEm" firstAttribute="top" secondItem="a7F-kU-7gq" secondAttribute="bottom" constant="10" id="4Nv-pS-X2U"/>
+                    <constraint firstItem="yTb-uf-LIX" firstAttribute="top" secondItem="MY0-VF-l8c" secondAttribute="bottom" constant="10" id="4Rb-Nn-nac"/>
+                    <constraint firstAttribute="trailing" secondItem="cMK-LB-yEm" secondAttribute="trailing" constant="10" id="87R-JF-8B8"/>
+                    <constraint firstItem="K1h-OY-rh2" firstAttribute="top" secondItem="K6n-l7-D7v" secondAttribute="top" id="8c2-xs-NPk"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cMK-LB-yEm" secondAttribute="bottom" constant="40" id="ITU-GS-zob"/>
+                    <constraint firstAttribute="bottom" secondItem="K6n-l7-D7v" secondAttribute="bottom" constant="10" id="Kl4-h6-jJm"/>
+                    <constraint firstItem="2Zh-F3-zkT" firstAttribute="centerY" secondItem="K6n-l7-D7v" secondAttribute="centerY" id="NOD-76-XAP"/>
+                    <constraint firstItem="cMK-LB-yEm" firstAttribute="leading" secondItem="30j-Q0-W4T" secondAttribute="trailing" constant="10" id="V0l-Gg-mzM"/>
+                    <constraint firstItem="a7F-kU-7gq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="VaS-rg-wyd"/>
+                    <constraint firstItem="MY0-VF-l8c" firstAttribute="leading" secondItem="30j-Q0-W4T" secondAttribute="trailing" constant="10" id="WVp-nm-SMs"/>
+                    <constraint firstItem="2Zh-F3-zkT" firstAttribute="leading" secondItem="K6n-l7-D7v" secondAttribute="trailing" constant="10" id="Y6u-hh-Oio"/>
+                    <constraint firstAttribute="bottom" secondItem="K1h-OY-rh2" secondAttribute="bottom" constant="10" id="Zij-pG-7Uh"/>
+                    <constraint firstItem="a7F-kU-7gq" firstAttribute="leading" secondItem="30j-Q0-W4T" secondAttribute="trailing" constant="10" id="b9k-m6-ZGT"/>
+                    <constraint firstItem="K6n-l7-D7v" firstAttribute="leading" secondItem="MY0-VF-l8c" secondAttribute="leading" id="bDk-HR-Ljd"/>
+                    <constraint firstItem="30j-Q0-W4T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="db3-Hx-hcY"/>
+                    <constraint firstAttribute="bottom" secondItem="yTb-uf-LIX" secondAttribute="bottom" constant="5" id="jXE-BL-TVr"/>
+                    <constraint firstItem="K1h-OY-rh2" firstAttribute="leading" secondItem="2Zh-F3-zkT" secondAttribute="trailing" constant="10" id="jfT-sM-lue"/>
+                    <constraint firstAttribute="trailing" secondItem="MY0-VF-l8c" secondAttribute="trailing" constant="10" id="v4H-aa-F6a"/>
+                    <constraint firstItem="MY0-VF-l8c" firstAttribute="top" secondItem="cMK-LB-yEm" secondAttribute="bottom" constant="10" id="vju-GI-SlZ"/>
+                    <constraint firstAttribute="trailing" secondItem="yTb-uf-LIX" secondAttribute="trailing" constant="10" id="yv6-ZY-hkL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="MY0-VF-l8c" id="8XE-v3-zDH"/>
+                <outlet property="likeButton" destination="K6n-l7-D7v" id="XGj-TM-Uw8"/>
+                <outlet property="placeHolderImage" destination="30j-Q0-W4T" id="5BK-IR-V29"/>
+                <outlet property="replayButton" destination="K1h-OY-rh2" id="pcd-mO-WMJ"/>
+                <outlet property="titleLabel" destination="a7F-kU-7gq" id="pVW-sz-3jo"/>
+                <outlet property="uploadImageView" destination="cMK-LB-yEm" id="I3p-wV-bbM"/>
+                <outlet property="viewRepliesButton" destination="yTb-uf-LIX" id="M1D-Ri-Fs0"/>
+            </connections>
+            <point key="canvasLocation" x="-148.55072463768118" y="60.9375"/>
+        </tableViewCell>
+    </objects>
+</document>

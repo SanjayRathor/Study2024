@@ -1,4 +1,4 @@
-class Person : CustomStringConvertible
+class Personq : CustomStringConvertible
 {
   // address
   var streetAddress = "", postcode = "", city = ""
@@ -15,7 +15,7 @@ class Person : CustomStringConvertible
 
 class PersonBuilder
 {
-  var person = Person()
+  var person = Personq()
   var lives : PersonAddressBuilder {
     return PersonAddressBuilder(person)
   }
@@ -24,7 +24,7 @@ class PersonBuilder
   }
 
   // no implicit conversions, so...
-  func build() -> Person
+  func build() -> Personq
   {
     return person
   }
@@ -32,7 +32,7 @@ class PersonBuilder
 
 class PersonJobBuilder : PersonBuilder
 {
-  internal init(_ person:Person)
+  internal init(_ person:Personq)
   {
     super.init()
     self.person = person
@@ -56,7 +56,7 @@ class PersonJobBuilder : PersonBuilder
 
 class PersonAddressBuilder : PersonBuilder
 {
-  internal init(_ person: Person)
+  internal init(_ person: Personq)
   {
     super.init()
     self.person = person
@@ -78,14 +78,14 @@ class PersonAddressBuilder : PersonBuilder
   }
 }
 
-func main()
-{
-  let pb = PersonBuilder()
-  let p = pb
-    .lives.at("123 London Road").inCity("London").withPostcode("SW12BC")
-    .works.at("Fabrikam").asA("Engineer").earning(123000)
-    .build();
-  print(p) 
-}
+//func main()
+//{
+//    let pb = PersonBuilder()
+//    let p = pb
+//        .lives.at("123 London Road").inCity("London").withPostcode("SW12BC")
+//        .works.at("Fabrikam").asA("Engineer").earning(123000)
+//        .build();
+//    print(p)
+//}
 
-main()
+

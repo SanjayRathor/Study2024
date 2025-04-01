@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SegoeUI-SemiBold.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="departmentCell" id="gTV-IL-0wX" customClass="departmentCell" customModule="TamimiEcom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XW-EP-YGY">
+                        <rect key="frame" x="5" y="0.0" width="173" height="123"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-Il-QaQ">
+                                <rect key="frame" x="0.0" y="0.0" width="173" height="98"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X13-FA-XVu">
+                                <rect key="frame" x="0.0" y="103" width="173" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="eSr-ku-fXF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="12"/>
+                                <color key="textColor" red="0.41568627450980389" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="X13-FA-XVu" secondAttribute="trailing" id="4wW-6v-oOj"/>
+                            <constraint firstItem="Sgb-Il-QaQ" firstAttribute="top" secondItem="0XW-EP-YGY" secondAttribute="top" id="7ts-Lx-SAm"/>
+                            <constraint firstAttribute="trailing" secondItem="Sgb-Il-QaQ" secondAttribute="trailing" id="HfE-0r-qSO"/>
+                            <constraint firstAttribute="bottom" secondItem="X13-FA-XVu" secondAttribute="bottom" constant="5" id="L55-ob-fde"/>
+                            <constraint firstItem="X13-FA-XVu" firstAttribute="top" secondItem="Sgb-Il-QaQ" secondAttribute="bottom" constant="5" id="PbP-xr-L70"/>
+                            <constraint firstItem="X13-FA-XVu" firstAttribute="leading" secondItem="0XW-EP-YGY" secondAttribute="leading" id="ikP-LC-spK"/>
+                            <constraint firstItem="Sgb-Il-QaQ" firstAttribute="leading" secondItem="0XW-EP-YGY" secondAttribute="leading" id="ogQ-h0-qY0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0XW-EP-YGY" secondAttribute="trailing" constant="5" id="A8w-3h-bvk"/>
+                <constraint firstItem="0XW-EP-YGY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PiC-88-GvO"/>
+                <constraint firstItem="0XW-EP-YGY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XQ1-tx-4OK"/>
+                <constraint firstAttribute="bottom" secondItem="0XW-EP-YGY" secondAttribute="bottom" id="g0d-kD-z2V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imageView" destination="Sgb-Il-QaQ" id="GMO-WK-44y"/>
+                <outlet property="lblTitle" destination="X13-FA-XVu" id="GbD-LH-mR1"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="130.58035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

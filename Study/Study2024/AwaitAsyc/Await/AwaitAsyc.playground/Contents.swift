@@ -56,3 +56,25 @@ Task {
 //        }
 //    }
 //}
+
+
+class Display {
+    
+    init() {
+        
+        Task {
+            async let d  = draw()
+            print("sd")
+        }
+    }
+    
+    
+    func draw() async -> String {
+        print("sdkaskdnkasdnk")
+        
+        return "asdmasdks"
+    }
+}
+
+
+Display()

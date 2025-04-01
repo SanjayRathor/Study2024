@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LatestNewsTableViewCell" rowHeight="128" id="KGk-i7-Jjw" customClass="LatestNewsTableViewCell" customModule="FandomLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rkx-JM-XfR">
+                        <rect key="frame" x="20" y="19" width="90" height="90"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="4MC-VM-hKo"/>
+                            <constraint firstAttribute="height" constant="90" id="92F-gY-NQZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kj-Bo-lbV">
+                        <rect key="frame" x="125" y="29" width="250" height="35.5"/>
+                        <string key="text">Lorem Ipsem is simply dummy text 
+of the pinting.</string>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.45882352941176469" green="0.46666666666666667" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zwO-za-LNO">
+                        <rect key="frame" x="125" y="79.5" width="15" height="15"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="LXz-9o-GxL"/>
+                            <constraint firstAttribute="width" constant="15" id="mRT-OQ-bXB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd mm yyyy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyL-uM-538">
+                        <rect key="frame" x="145" y="78" width="80" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-EC-53O">
+                        <rect key="frame" x="20" y="125" width="345" height="1.5"/>
+                        <color key="backgroundColor" red="0.83529411760000005" green="0.83921568629999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="8qL-Fk-uAF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rkx-JM-XfR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7Hi-PN-RN7"/>
+                    <constraint firstItem="tyL-uM-538" firstAttribute="leading" secondItem="zwO-za-LNO" secondAttribute="trailing" constant="5" id="7St-dc-GB5"/>
+                    <constraint firstAttribute="bottom" secondItem="7UC-EC-53O" secondAttribute="bottom" constant="1.5" id="Pz4-ub-pqJ"/>
+                    <constraint firstItem="zwO-za-LNO" firstAttribute="leading" secondItem="Rkx-JM-XfR" secondAttribute="trailing" constant="15" id="SA6-49-JAx"/>
+                    <constraint firstItem="4Kj-Bo-lbV" firstAttribute="leading" secondItem="Rkx-JM-XfR" secondAttribute="trailing" constant="15" id="daB-Fz-Mci"/>
+                    <constraint firstAttribute="trailing" secondItem="7UC-EC-53O" secondAttribute="trailing" constant="20" id="gft-4y-tIE"/>
+                    <constraint firstItem="zwO-za-LNO" firstAttribute="top" secondItem="4Kj-Bo-lbV" secondAttribute="bottom" constant="15" id="jJM-zT-xOy"/>
+                    <constraint firstItem="tyL-uM-538" firstAttribute="centerY" secondItem="zwO-za-LNO" secondAttribute="centerY" id="jTD-8q-uZz"/>
+                    <constraint firstItem="Rkx-JM-XfR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oBS-9y-qQs"/>
+                    <constraint firstItem="7UC-EC-53O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oTo-Zi-oPq"/>
+                    <constraint firstItem="4Kj-Bo-lbV" firstAttribute="top" secondItem="Rkx-JM-XfR" secondAttribute="top" constant="10" id="pah-bc-fTg"/>
+                    <constraint firstAttribute="trailing" secondItem="4Kj-Bo-lbV" secondAttribute="trailing" constant="10" id="yjL-8x-6cp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="tyL-uM-538" id="maD-k6-GVv"/>
+                <outlet property="descLabel" destination="4Kj-Bo-lbV" id="57O-hi-rHh"/>
+                <outlet property="thumbImageView" destination="Rkx-JM-XfR" id="29b-OX-aKU"/>
+            </connections>
+            <point key="canvasLocation" x="-34.057971014492757" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendarIcon" width="15" height="15"/>
+    </resources>
+</document>

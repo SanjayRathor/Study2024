@@ -1,0 +1,55 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'Jaee2' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Jaee2
+pod 'Haneke', '~> 1.0'
+pod "TextFieldEffects"
+pod 'STLocationRequest'
+pod 'SwiftyJSON'
+pod 'Alamofire', '~> 4.5’
+pod 'PasswordTextField'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+pod 'HMScrollNavigationBar'
+pod 'DropDown'
+pod 'MGSwipeTableCell'
+pod 'FormTextField'
+pod 'SwiftLocation'
+pod 'NotificationBannerSwift'
+pod 'TIPBadgeManager', '~> 0.3.0'
+pod 'JTMaterialSpinner', '~> 2.0'
+pod 'SwiftyGif'
+pod 'CircularStepProgressView'
+pod 'pop', '~> 1.0'
+pod 'URParallaxScrollAnimator'
+pod 'TGCircularTimerView', '1.0.0'
+pod 'Permission/Location'
+pod 'LocationPickerViewController'
+pod 'RQShineLabel'
+pod 'SwiftVideoBackground', '~> 0.06'
+pod 'SkyFloatingLabelTextField', git: 'https://github.com/Skyscanner/SkyFloatingLabelTextField/'
+pod 'Cosmos', '~> 12.0'
+pod 'VegaScrollFlowLayout'
+pod 'GoogleAnalytics'
+pod 'ViewAnimator'
+pod 'TCPickerView'
+pod 'PinterestSegment'
+pod 'OneSignal', '>= 2.5.2', '< 3.0'
+pod 'WhatsNew'
+pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '3.11.0'
+pod 'PercentEncoder'
+pod 'ParallaxHeader', '~> 2.0.0'
+pod 'VoucherifySwiftSdk'
+
+
+
+end
+
+target 'OneSignalNotificationServiceExtension' do
+  use_frameworks!
+
+  pod 'OneSignal', '>= 2.5.2', '< 3.0'
+end

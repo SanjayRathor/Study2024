@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03364DAE1C0C166D00F3204F /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03364DAD1C0C166D00F3204F /* Poll.swift */; };
+		03364DB01C0C16CC00F3204F /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03364DAF1C0C16CC00F3204F /* Answer.swift */; };
+		037A15321BF7DAED008C487C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A15311BF7DAED008C487C /* AppDelegate.swift */; };
+		037A15341BF7DAED008C487C /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A15331BF7DAED008C487C /* VoteViewController.swift */; };
+		037A15371BF7DAED008C487C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037A15351BF7DAED008C487C /* Main.storyboard */; };
+		037A15391BF7DAED008C487C /* iOS-Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037A15381BF7DAED008C487C /* iOS-Assets.xcassets */; };
+		037A153C1BF7DAED008C487C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037A153A1BF7DAED008C487C /* LaunchScreen.storyboard */; };
+		5B61AFED1C5975B000D029EF /* RVoteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B61AFEC1C5975B000D029EF /* RVoteKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		032E9E761C063BBD00E5E9EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037A15B91BF7DC08008C487C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037A15CF1BF7DC80008C487C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03364DAD1C0C166D00F3204F /* Poll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		03364DAF1C0C16CC00F3204F /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		037A152E1BF7DAED008C487C /* RVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		037A15311BF7DAED008C487C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		037A15331BF7DAED008C487C /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		037A15361BF7DAED008C487C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		037A15381BF7DAED008C487C /* iOS-Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "iOS-Assets.xcassets"; sourceTree = "<group>"; };
+		037A153B1BF7DAED008C487C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		037A153D1BF7DAED008C487C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B61AFEC1C5975B000D029EF /* RVoteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RVoteKit.framework; path = "../RVoteKit/build/Debug-iphoneos/RVoteKit.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		037A152B1BF7DAED008C487C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B61AFED1C5975B000D029EF /* RVoteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037A15251BF7DAED008C487C = {
+			isa = PBXGroup;
+			children = (
+				037A15301BF7DAED008C487C /* RVote */,
+				037A15BF1BF7DC80008C487C /* Frameworks */,
+				037A152F1BF7DAED008C487C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		037A152F1BF7DAED008C487C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				037A152E1BF7DAED008C487C /* RVote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		037A15301BF7DAED008C487C /* RVote */ = {
+			isa = PBXGroup;
+			children = (
+				03DFD9EB1C6AED8A004A58AF /* Shared */,
+				037A15311BF7DAED008C487C /* AppDelegate.swift */,
+				037A15351BF7DAED008C487C /* Main.storyboard */,
+				037A153A1BF7DAED008C487C /* LaunchScreen.storyboard */,
+				037A153D1BF7DAED008C487C /* Info.plist */,
+			);
+			path = RVote;
+			sourceTree = "<group>";
+		};
+		037A15BF1BF7DC80008C487C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B61AFEC1C5975B000D029EF /* RVoteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03DFD9EB1C6AED8A004A58AF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				03DFD9EC1C6AED95004A58AF /* Model */,
+				037A15331BF7DAED008C487C /* VoteViewController.swift */,
+				037A15381BF7DAED008C487C /* iOS-Assets.xcassets */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		03DFD9EC1C6AED95004A58AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03364DAD1C0C166D00F3204F /* Poll.swift */,
+				03364DAF1C0C16CC00F3204F /* Answer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		037A152D1BF7DAED008C487C /* RVote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037A15561BF7DAED008C487C /* Build configuration list for PBXNativeTarget "RVote" */;
+			buildPhases = (
+				037A152A1BF7DAED008C487C /* Sources */,
+				037A152B1BF7DAED008C487C /* Frameworks */,
+				037A152C1BF7DAED008C487C /* Resources */,
+				037A15B91BF7DC08008C487C /* Embed Watch Content */,
+				037A15CF1BF7DC80008C487C /* Embed App Extensions */,
+				032E9E761C063BBD00E5E9EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RVote;
+			productName = RVote;
+			productReference = 037A152E1BF7DAED008C487C /* RVote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		037A15261BF7DAED008C487C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					037A152D1BF7DAED008C487C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 037A15291BF7DAED008C487C /* Build configuration list for PBXProject "RVote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 037A15251BF7DAED008C487C;
+			productRefGroup = 037A152F1BF7DAED008C487C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				037A152D1BF7DAED008C487C /* RVote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		037A152C1BF7DAED008C487C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037A153C1BF7DAED008C487C /* LaunchScreen.storyboard in Resources */,
+				037A15391BF7DAED008C487C /* iOS-Assets.xcassets in Resources */,
+				037A15371BF7DAED008C487C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		037A152A1BF7DAED008C487C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037A15341BF7DAED008C487C /* VoteViewController.swift in Sources */,
+				03364DAE1C0C166D00F3204F /* Poll.swift in Sources */,
+				037A15321BF7DAED008C487C /* AppDelegate.swift in Sources */,
+				03364DB01C0C16CC00F3204F /* Answer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		037A15351BF7DAED008C487C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				037A15361BF7DAED008C487C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		037A153A1BF7DAED008C487C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				037A153B1BF7DAED008C487C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		037A15541BF7DAED008C487C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		037A15551BF7DAED008C487C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		037A15571BF7DAED008C487C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		037A15581BF7DAED008C487C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.RVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		037A15291BF7DAED008C487C /* Build configuration list for PBXProject "RVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037A15541BF7DAED008C487C /* Debug */,
+				037A15551BF7DAED008C487C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037A15561BF7DAED008C487C /* Build configuration list for PBXNativeTarget "RVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037A15571BF7DAED008C487C /* Debug */,
+				037A15581BF7DAED008C487C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 037A15261BF7DAED008C487C /* Project object */;
+}

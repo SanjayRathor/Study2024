@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SegoeUI-Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="SegoeUI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CheckOutGridCell" customModule="TamimiEcom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your prefered day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QF-G8-HLv">
+                        <rect key="frame" x="10" y="15" width="300" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="FjH-c4-lXu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
+                        <color key="textColor" red="0.41568627450980389" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DwN-v6-TKz">
+                        <rect key="frame" x="10" y="40" width="300" height="35"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ojU-0o-QAC"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="5pl-dO-dJq">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slot is not available, Please select another date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsv-SD-std">
+                        <rect key="frame" x="10" y="40" width="300" height="35"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <color key="textColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5QF-G8-HLv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Kzk-8g-EIb"/>
+                <constraint firstItem="DwN-v6-TKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="LBy-iK-xtV"/>
+                <constraint firstAttribute="bottom" secondItem="vsv-SD-std" secondAttribute="bottom" id="PqO-Sv-dhr"/>
+                <constraint firstAttribute="trailing" secondItem="DwN-v6-TKz" secondAttribute="trailing" constant="10" id="XeD-Pt-YvT"/>
+                <constraint firstItem="vsv-SD-std" firstAttribute="top" secondItem="5QF-G8-HLv" secondAttribute="bottom" constant="10" id="esV-ws-FYb"/>
+                <constraint firstAttribute="trailing" secondItem="5QF-G8-HLv" secondAttribute="trailing" constant="10" id="hGg-Uc-10t"/>
+                <constraint firstItem="vsv-SD-std" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hiT-7d-aJh"/>
+                <constraint firstItem="DwN-v6-TKz" firstAttribute="top" secondItem="5QF-G8-HLv" secondAttribute="bottom" constant="10" id="ksi-D0-jYi"/>
+                <constraint firstItem="5QF-G8-HLv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="oCj-7j-bXe"/>
+                <constraint firstAttribute="trailing" secondItem="vsv-SD-std" secondAttribute="trailing" constant="10" id="sYk-8S-AC8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="ctView" destination="DwN-v6-TKz" id="m20-ho-s2e"/>
+                <outlet property="lblNoSlotInfo" destination="vsv-SD-std" id="qHX-rM-xEV"/>
+                <outlet property="titleLbl" destination="5QF-G8-HLv" id="4kd-TR-oxg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.352678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

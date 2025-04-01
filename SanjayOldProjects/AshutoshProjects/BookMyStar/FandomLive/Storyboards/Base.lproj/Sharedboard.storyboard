@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyRewardViewController-->
+        <scene sceneID="Knm-Pm-D3M">
+            <objects>
+                <viewController storyboardIdentifier="MyRewardViewController" id="oEe-Fk-bEi" userLabel="MyRewardViewController" customClass="MyRewardViewController" customModule="BookMyStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="692-oS-VXD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toi-ox-FVh">
+                                <rect key="frame" x="149.66666666666666" y="392" width="76" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Toi-ox-FVh" firstAttribute="centerX" secondItem="692-oS-VXD" secondAttribute="centerX" id="CF9-vJ-ajT"/>
+                            <constraint firstItem="Toi-ox-FVh" firstAttribute="centerY" secondItem="692-oS-VXD" secondAttribute="centerY" id="Jc7-hv-G2I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xdq-Oq-iVW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Z8-1q-cgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="53"/>
+        </scene>
+        <!--MyVotingViewController-->
+        <scene sceneID="ePt-Rv-1Po">
+            <objects>
+                <viewController storyboardIdentifier="MyVotingViewController" id="SUE-FI-z0Z" userLabel="MyVotingViewController" customClass="MyVotingViewController" customModule="BookMyStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8De-IT-gNX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jNI-4u-xwU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dmi-QR-PBw">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SUE-FI-z0Z" id="K80-1P-fLI"/>
+                                    <outlet property="delegate" destination="SUE-FI-z0Z" id="R8y-fO-tDm"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jNI-4u-xwU" firstAttribute="trailing" secondItem="OYM-9B-4YH" secondAttribute="trailing" id="H95-Bz-Cmi"/>
+                            <constraint firstItem="jNI-4u-xwU" firstAttribute="top" secondItem="8De-IT-gNX" secondAttribute="top" id="H9R-Kx-lTf"/>
+                            <constraint firstItem="jNI-4u-xwU" firstAttribute="leading" secondItem="OYM-9B-4YH" secondAttribute="leading" id="HwR-gZ-LX4"/>
+                            <constraint firstAttribute="bottom" secondItem="jNI-4u-xwU" secondAttribute="bottom" id="iGA-rT-I98"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OYM-9B-4YH"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="jNI-4u-xwU" id="lcz-Wc-9vo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zr-Uj-0qz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="43.596059113300491"/>
+        </scene>
+        <!--MyLaunchpadViewController-->
+        <scene sceneID="Fjw-rX-GJc">
+            <objects>
+                <viewController storyboardIdentifier="MyLaunchpadViewController" id="RX3-UI-Rrs" userLabel="MyLaunchpadViewController" customClass="MyLaunchpadViewController" customModule="BookMyStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7sF-99-7hs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQW-cI-cab">
+                                <rect key="frame" x="149.66666666666666" y="392" width="76" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gQW-cI-cab" firstAttribute="centerX" secondItem="7sF-99-7hs" secondAttribute="centerX" id="2e5-k1-zhE"/>
+                            <constraint firstItem="gQW-cI-cab" firstAttribute="centerY" secondItem="7sF-99-7hs" secondAttribute="centerY" id="RZA-Iq-M0I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vFi-ON-5a0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V27-kK-hPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="44"/>
+        </scene>
+        <!--MyFavoritesViewController-->
+        <scene sceneID="vvA-4E-xge">
+            <objects>
+                <viewController storyboardIdentifier="MyFavoritesViewController" id="uHX-BD-zcT" userLabel="MyFavoritesViewController" customClass="MyFavoritesViewController" customModule="BookMyStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paJ-JT-bPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-EJ-0Nr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ema-MY-oau">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uHX-BD-zcT" id="teT-eE-4gk"/>
+                                    <outlet property="delegate" destination="uHX-BD-zcT" id="bER-Xb-QWX"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zeO-EJ-0Nr" firstAttribute="trailing" secondItem="Ixl-Nk-oh2" secondAttribute="trailing" id="3fN-Ne-1C2"/>
+                            <constraint firstAttribute="bottom" secondItem="zeO-EJ-0Nr" secondAttribute="bottom" id="Bio-6M-KsV"/>
+                            <constraint firstItem="zeO-EJ-0Nr" firstAttribute="leading" secondItem="Ixl-Nk-oh2" secondAttribute="leading" id="Zcb-zB-byT"/>
+                            <constraint firstItem="zeO-EJ-0Nr" firstAttribute="top" secondItem="paJ-JT-bPf" secondAttribute="top" id="h5W-1a-9Gu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ixl-Nk-oh2"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="zeO-EJ-0Nr" id="lUE-Ec-iid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwV-iQ-UEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="44"/>
+        </scene>
+    </scenes>
+</document>

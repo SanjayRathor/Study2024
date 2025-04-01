@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Atami_Reguler.otf">
+            <string>Atami-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecurityUpdatesTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="SecurityUpdatesTableViewCell" customModule="FandomLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zHq-7b-QLy">
+                        <rect key="frame" x="247.5" y="10" width="62.5" height="50"/>
+                        <color key="backgroundColor" white="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zHq-7b-QLy" secondAttribute="height" multiplier="20:16" id="kyB-LE-84F"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H68-96-tMV">
+                        <rect key="frame" x="15" y="10" width="227.5" height="19"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="16"/>
+                        <color key="textColor" red="0.25882352941176467" green="0.28627450980392155" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW9-iC-SdO">
+                        <rect key="frame" x="16" y="26" width="227.5" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="12"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-hA-PiJ">
+                        <rect key="frame" x="15" y="50" width="71" height="15"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="12"/>
+                        <state key="normal" title="  5 min ago" image="clock">
+                            <color key="titleColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSQ-hw-EJH">
+                        <rect key="frame" x="106" y="50" width="73.5" height="15"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="12"/>
+                        <state key="normal" title="  5 min ago" image="Comment_small">
+                            <color key="titleColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zHq-7b-QLy" secondAttribute="trailing" constant="10" id="3aK-9Q-q58"/>
+                    <constraint firstAttribute="bottom" secondItem="9iT-hA-PiJ" secondAttribute="bottom" constant="5" id="KXx-aQ-iAA"/>
+                    <constraint firstItem="TSQ-hw-EJH" firstAttribute="leading" secondItem="9iT-hA-PiJ" secondAttribute="trailing" constant="20" id="MWR-At-0Sa"/>
+                    <constraint firstItem="9iT-hA-PiJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Tns-8F-1N5"/>
+                    <constraint firstItem="zHq-7b-QLy" firstAttribute="leading" secondItem="H68-96-tMV" secondAttribute="trailing" constant="5" id="Zsw-49-Efp"/>
+                    <constraint firstItem="H68-96-tMV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bPh-0i-Vjq"/>
+                    <constraint firstAttribute="bottom" secondItem="TSQ-hw-EJH" secondAttribute="bottom" constant="5" id="dU0-uo-SyU"/>
+                    <constraint firstItem="H68-96-tMV" firstAttribute="top" secondItem="zHq-7b-QLy" secondAttribute="top" id="hMF-jp-UzD"/>
+                    <constraint firstItem="zHq-7b-QLy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="o5f-Bg-Bqg"/>
+                    <constraint firstAttribute="bottom" secondItem="zHq-7b-QLy" secondAttribute="bottom" constant="10" id="ojP-jg-UeX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentsLabel" destination="TSQ-hw-EJH" id="neE-kC-6vb"/>
+                <outlet property="nameLabel" destination="H68-96-tMV" id="CdA-JE-7GS"/>
+                <outlet property="subNameLabel" destination="xW9-iC-SdO" id="AWG-kE-YYe"/>
+                <outlet property="timeAgoLabel" destination="9iT-hA-PiJ" id="oDd-1T-TAm"/>
+                <outlet property="updateImageView" destination="zHq-7b-QLy" id="rtf-l7-eUp"/>
+            </connections>
+            <point key="canvasLocation" x="-261" y="49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Comment_small" width="12.5" height="9.5"/>
+        <image name="clock" width="10" height="10"/>
+    </resources>
+</document>

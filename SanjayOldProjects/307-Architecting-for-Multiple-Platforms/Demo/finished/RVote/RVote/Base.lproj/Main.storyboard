@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoteViewController" customModule="RVote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ofE-xs-2oZ">
+                                <rect key="frame" x="16" y="413.5" width="343" height="243.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q8-8r-t7M" customClass="VoteButton" customModule="RVoteKit">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="117"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3W-vc-3nf" customClass="VoteButton" customModule="RVoteKit">
+                                        <rect key="frame" x="0.0" y="127" width="343" height="116.5"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu9-77-J79" customClass="PollBox" customModule="RVoteKit">
+                                <rect key="frame" x="16" y="227" width="343" height="166.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="scb-BG-O1C">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="scb-BG-O1C"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eve" translatesAutoresizingMaskIntoConstraints="NO" id="k1a-z5-3ax">
+                                <rect key="frame" x="36" y="40" width="303" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ofE-xs-2oZ" firstAttribute="top" secondItem="iu9-77-J79" secondAttribute="bottom" constant="20" id="3ZK-tn-fjm"/>
+                            <constraint firstItem="iu9-77-J79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9iv-sK-LDj"/>
+                            <constraint firstItem="ofE-xs-2oZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A1X-vO-b5y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ofE-xs-2oZ" secondAttribute="trailing" id="KCV-06-AeO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k1a-z5-3ax" secondAttribute="trailing" constant="20" id="bX3-Ad-ieD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iu9-77-J79" secondAttribute="trailing" id="co2-93-mgK"/>
+                            <constraint firstItem="iu9-77-J79" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="fvj-up-KkO"/>
+                            <constraint firstItem="k1a-z5-3ax" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="hdb-Xw-I3w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ofE-xs-2oZ" secondAttribute="bottom" constant="10" id="m7i-MI-aaU"/>
+                            <constraint firstItem="k1a-z5-3ax" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="oU4-Bm-0DV"/>
+                            <constraint firstItem="iu9-77-J79" firstAttribute="top" secondItem="k1a-z5-3ax" secondAttribute="bottom" constant="20" id="ov2-Qk-v7c"/>
+                            <constraint firstItem="k1a-z5-3ax" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="rdx-ca-0nN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="ofE-xs-2oZ" id="dgi-c6-ft3"/>
+                        <outlet property="pollBox" destination="iu9-77-J79" id="f21-R7-f3c"/>
+                        <outlet property="pollPic" destination="k1a-z5-3ax" id="ati-3G-Q2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eve" width="500" height="334"/>
+    </resources>
+</document>

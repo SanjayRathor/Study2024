@@ -1,0 +1,103 @@
+
+1-  In classes, if you have no properties, or all default values specified for them, you got a free empty initializer to create your class.  With structures, you get a free member-wise initializer.
+
+1.1- If you do want to keep the member-wise initializer, but also have your own, Apple’s iBook suggests writing the initializer via an extension.
+
+1.2- Structs can only have designated initializers, structs cannot have convenience initializers.
+
+1.3 -Major differences between Structures and Classes:
+
+    a) Structures cannot Inherit from other types.
+    b) Classes use type-casting to treat a class as a superclass or subclass, as well as check protocol adoption.  Structs can only use the protocol adoption part.
+    c) Structures do not have deinitializers.
+    d) Structures cannot have multiple references to the same instance
+
+
+2-  all the strored properties must be initialized. If these are the optiononals then
+    then these are initialize with nil otherwise must be in  the init methods
+
+3-  Structs can only have designated initializers, structs cannot have convenience initializers.
+
+4- Swift doesn’t allow nil references
+
+5- the compiler won't let me override a stored property with another stored value (which seems odd):
+6- It is must to initailize the derived class properties first and after that you can decide the base class properties. Otherwise compiler  will provide  the error
+
+7- private acess controll does not allow derived to use base class method
+8- final keyword does not allow for override
+
+Two-phase initialization
+
+Because of Swift’s requirement that all stored properties have initial values, initializers in subclasses must adhere to Swift’s convention of two-phase initialization.
+• Phase one: Initialize all of the stored properties in the class instance, from the bottom to the top of the class hierarchy. You can't use properties and methods until phase 1 is complete.
+• Phase two: You can now use properties and methods, as well as initializations that require the use of self.
+
+9- We can not overrode the static methods
+10- class method is that subclasses can override that method to provide their own implementation.
+11- You could also use final class in place of the static keyword.
+
+12- You can use computed properties with any class, struct, or enum that you define. Computed properties do not store values like the properties that you have been working with thus far. Instead, a computed property provides a getter and optional setter to retrieve or set the property’s value.
+
+13- Static properties are by default lazzy
+14- Closures are functions without names. Clusers are refference type anot value type 
+
+
+SEP
+7
+Swift: The rules of being weak and unowned in closures and capture lists (Xcode 6 Beta 7)
+
+Following earlier posts on the weak, unowned and lazy keywords, I consider here their use with closures.
+Why worry about using weak and unowned in closures?
+
+The first thing to do is to explain why we need to use weak and unowned in closures. And the best people to do that are the people writing the Swift documentation, so let's start with why we need to worry about this in our code:
+If you assign a closure to a property of a class instance, and the closure captures that instance by referring to the instance or its members, you will create a strong reference cycle between the closure and the instance. Swift uses capture lists to break these strong reference cycles. (Apple)
+How to solve the problem with capture lists
+
+It can feel like a daunting level of responsibility to not create a strong reference cycle inside a closure, but if we take our time to understand the capture list then our anxieties can be alleviated:
+A closure expression can explicitly specify the values that it captures from the surrounding scope using a capture list. A capture list is written as a comma separated list surrounded by square brackets, before the list of parameters. If you use a capture list, you must also use the in keyword, even if you omit the parameter names, parameter types, and return type.
+
+Each entry in the capture list can be marked as weak or unowned to capture a weak or unowned reference to the value.
+
+myFunction { print(self.title) }                    // strong capture
+myFunction { [weak self] in print(self!.title) }    // weak capture
+myFunction { [unowned self] in print(self.title) }  // unowned capture
+
+You can also bind an arbitrary expression to a named value in the capture list. The expression is evaluated when the closure is formed, and captured with the specified strength. For example:
+
+// Weak capture of "self.parent" as "parent"
+myFunction { [weak parent = self.parent] in print(parent!.title) }" (Apple)
+Rules of using weak and unowned in closures
+
+First, it is important to make clear that this whole issue only concerns closures where we are assigning "a closure to a property of a class instance". Keep this in mind with each rule.
+
+The rules:
+use weak capture if the class instance or property is an optional
+use unowned if the class instance or property is non-optional and can never be set to nil
+"you must ... use the in keyword, even if you omit the parameter names, parameter types, and return type"
+
+15- If a closure is passed as an argument to a function and it is invoked after the function returns, the closure is escaping.
+
+16- It's important to note that just because a protocol defines a property as read-only, it doesn't mean you necessarily need to implement it with a read-only property:
+
+17- If method or property present in protocol and also in extension then there is always dynamic dispatch. If method or property is presnt only in extension then there is static dispatch
+
+18- By making th class methods static you saying that this mathod can not be overridden by derived class ie implicitly thay are "final". If you want to allow override then use class funct
+
+19- POP - Think app architecture horigentally vs OOP - Think app architecture verically
+
+"self" refers to the current instance, in the body of one of its methods.
+
+20-
+     "Self" is a placeholder used in two different cases:
+    1. In a protocol, it refers to the type that conforms to the protocol in any particular use. In Equatable, for example, it's used to require that the two values being compared are of the same type. It's something like a generic type parameter that you don't have to put between the <…> because it's deduced from the context of its use.
+
+    2. In a class/static method, it can be used as the return type, to indicate that the return type is the type of the class to which the method was sent, rather than the class in which the method is declared. It's similar to 'instancetype' in Obj-C.
+
+21- that one caller should handle some or all errors in any functions that it calls as well as any errors in functions that those functions call, and so on, you need to learn about error propagation."nonthrowing functions are subtypes of throwing functions.As a result, you can use a nonthrowing function in the same places as a throwing one."
+
+22- rethrows tells the compiler that this function will only throw an error when its function parameter throws an error. now only requires try/catch to be used when the closure you pass in throws.
+
+23 - PAT - It is a placeholder of abstract type. You cannot define a variable, constant, property, function  argument, or function return type as a PAT type!. You can only use them as generic constraints.
+    It means that you can write a generic type or generic function, where the type parameter is constrained to adopt the PAT.
+
+

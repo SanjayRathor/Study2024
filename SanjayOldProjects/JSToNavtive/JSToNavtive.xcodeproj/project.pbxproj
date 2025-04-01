@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B56E974C2416167B00807250 /* SJavaScriptCore in Frameworks */ = {isa = PBXBuildFile; productRef = B56E974B2416167B00807250 /* SJavaScriptCore */; };
+		B5FF3DBA241236FB000F2819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FF3DB9241236FB000F2819 /* AppDelegate.swift */; };
+		B5FF3DBE241236FB000F2819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FF3DBD241236FB000F2819 /* ViewController.swift */; };
+		B5FF3DC1241236FB000F2819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DBF241236FB000F2819 /* Main.storyboard */; };
+		B5FF3DC3241236FE000F2819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DC2241236FE000F2819 /* Assets.xcassets */; };
+		B5FF3DC6241236FE000F2819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DC4241236FE000F2819 /* LaunchScreen.storyboard */; };
+		B5FF3DD7241237F7000F2819 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DCE241237F7000F2819 /* index.html */; };
+		B5FF3DD8241237F7000F2819 /* mfl.ts in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DCF241237F7000F2819 /* mfl.ts */; };
+		B5FF3DD9241237F7000F2819 /* hariom.ts in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DD0241237F7000F2819 /* hariom.ts */; };
+		B5FF3DDA241237F7000F2819 /* tsconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DD2241237F7000F2819 /* tsconfig.json */; };
+		B5FF3DDB241237F7000F2819 /* hariom.js in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DD3241237F7000F2819 /* hariom.js */; };
+		B5FF3DDC241237F7000F2819 /* mfl.code-workspace in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DD5241237F7000F2819 /* mfl.code-workspace */; };
+		B5FF3DDD241237F7000F2819 /* mfl.js in Resources */ = {isa = PBXBuildFile; fileRef = B5FF3DD6241237F7000F2819 /* mfl.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5FF3DB6241236FB000F2819 /* JSToNavtive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSToNavtive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FF3DB9241236FB000F2819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5FF3DBD241236FB000F2819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5FF3DC0241236FB000F2819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5FF3DC2241236FE000F2819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5FF3DC5241236FE000F2819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5FF3DC7241236FE000F2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FF3DCE241237F7000F2819 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B5FF3DCF241237F7000F2819 /* mfl.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mfl.ts; sourceTree = "<group>"; };
+		B5FF3DD0241237F7000F2819 /* hariom.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hariom.ts; sourceTree = "<group>"; };
+		B5FF3DD1241237F7000F2819 /* mfl.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = mfl.js.map; sourceTree = "<group>"; };
+		B5FF3DD2241237F7000F2819 /* tsconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tsconfig.json; sourceTree = "<group>"; };
+		B5FF3DD3241237F7000F2819 /* hariom.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hariom.js; sourceTree = "<group>"; };
+		B5FF3DD4241237F7000F2819 /* hariom.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = hariom.js.map; sourceTree = "<group>"; };
+		B5FF3DD5241237F7000F2819 /* mfl.code-workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mfl.code-workspace"; sourceTree = "<group>"; };
+		B5FF3DD6241237F7000F2819 /* mfl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mfl.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FF3DB3241236FB000F2819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56E974C2416167B00807250 /* SJavaScriptCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FF3DAD241236FB000F2819 = {
+			isa = PBXGroup;
+			children = (
+				B5FF3DB8241236FB000F2819 /* JSToNavtive */,
+				B5FF3DB7241236FB000F2819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FF3DB7241236FB000F2819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FF3DB6241236FB000F2819 /* JSToNavtive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FF3DB8241236FB000F2819 /* JSToNavtive */ = {
+			isa = PBXGroup;
+			children = (
+				B5FF3DCD241237F7000F2819 /* mfl */,
+				B5FF3DB9241236FB000F2819 /* AppDelegate.swift */,
+				B5FF3DBD241236FB000F2819 /* ViewController.swift */,
+				B5FF3DBF241236FB000F2819 /* Main.storyboard */,
+				B5FF3DC2241236FE000F2819 /* Assets.xcassets */,
+				B5FF3DC4241236FE000F2819 /* LaunchScreen.storyboard */,
+				B5FF3DC7241236FE000F2819 /* Info.plist */,
+			);
+			path = JSToNavtive;
+			sourceTree = "<group>";
+		};
+		B5FF3DCD241237F7000F2819 /* mfl */ = {
+			isa = PBXGroup;
+			children = (
+				B5FF3DCE241237F7000F2819 /* index.html */,
+				B5FF3DCF241237F7000F2819 /* mfl.ts */,
+				B5FF3DD0241237F7000F2819 /* hariom.ts */,
+				B5FF3DD1241237F7000F2819 /* mfl.js.map */,
+				B5FF3DD2241237F7000F2819 /* tsconfig.json */,
+				B5FF3DD3241237F7000F2819 /* hariom.js */,
+				B5FF3DD4241237F7000F2819 /* hariom.js.map */,
+				B5FF3DD5241237F7000F2819 /* mfl.code-workspace */,
+				B5FF3DD6241237F7000F2819 /* mfl.js */,
+			);
+			path = mfl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FF3DB5241236FB000F2819 /* JSToNavtive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FF3DCA241236FE000F2819 /* Build configuration list for PBXNativeTarget "JSToNavtive" */;
+			buildPhases = (
+				B5FF3DB2241236FB000F2819 /* Sources */,
+				B5FF3DB3241236FB000F2819 /* Frameworks */,
+				B5FF3DB4241236FB000F2819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSToNavtive;
+			packageProductDependencies = (
+				B56E974B2416167B00807250 /* SJavaScriptCore */,
+			);
+			productName = JSToNavtive;
+			productReference = B5FF3DB6241236FB000F2819 /* JSToNavtive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FF3DAE241236FB000F2819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Timesinternet ltd";
+				TargetAttributes = {
+					B5FF3DB5241236FB000F2819 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B5FF3DB1241236FB000F2819 /* Build configuration list for PBXProject "JSToNavtive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5FF3DAD241236FB000F2819;
+			packageReferences = (
+				B56E974A2416167B00807250 /* XCRemoteSwiftPackageReference "JavaScriptCore" */,
+			);
+			productRefGroup = B5FF3DB7241236FB000F2819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FF3DB5241236FB000F2819 /* JSToNavtive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FF3DB4241236FB000F2819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FF3DDD241237F7000F2819 /* mfl.js in Resources */,
+				B5FF3DD8241237F7000F2819 /* mfl.ts in Resources */,
+				B5FF3DC6241236FE000F2819 /* LaunchScreen.storyboard in Resources */,
+				B5FF3DD9241237F7000F2819 /* hariom.ts in Resources */,
+				B5FF3DD7241237F7000F2819 /* index.html in Resources */,
+				B5FF3DDB241237F7000F2819 /* hariom.js in Resources */,
+				B5FF3DC3241236FE000F2819 /* Assets.xcassets in Resources */,
+				B5FF3DDC241237F7000F2819 /* mfl.code-workspace in Resources */,
+				B5FF3DC1241236FB000F2819 /* Main.storyboard in Resources */,
+				B5FF3DDA241237F7000F2819 /* tsconfig.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FF3DB2241236FB000F2819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FF3DBE241236FB000F2819 /* ViewController.swift in Sources */,
+				B5FF3DBA241236FB000F2819 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5FF3DBF241236FB000F2819 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FF3DC0241236FB000F2819 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5FF3DC4241236FE000F2819 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FF3DC5241236FE000F2819 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5FF3DC8241236FE000F2819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FF3DC9241236FE000F2819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5FF3DCB241236FE000F2819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4543GK426N;
+				INFOPLIST_FILE = JSToNavtive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.til.chatboat.JSToNavtive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5FF3DCC241236FE000F2819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4543GK426N;
+				INFOPLIST_FILE = JSToNavtive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.til.chatboat.JSToNavtive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FF3DB1241236FB000F2819 /* Build configuration list for PBXProject "JSToNavtive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FF3DC8241236FE000F2819 /* Debug */,
+				B5FF3DC9241236FE000F2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FF3DCA241236FE000F2819 /* Build configuration list for PBXNativeTarget "JSToNavtive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FF3DCB241236FE000F2819 /* Debug */,
+				B5FF3DCC241236FE000F2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B56E974A2416167B00807250 /* XCRemoteSwiftPackageReference "JavaScriptCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JavaScriptKit/JavaScriptCore.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B56E974B2416167B00807250 /* SJavaScriptCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B56E974A2416167B00807250 /* XCRemoteSwiftPackageReference "JavaScriptCore" */;
+			productName = SJavaScriptCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B5FF3DAE241236FB000F2819 /* Project object */;
+}

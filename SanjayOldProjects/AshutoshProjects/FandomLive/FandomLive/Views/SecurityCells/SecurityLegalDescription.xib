@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Atami_Bold.otf">
+            <string>Atami-Bold</string>
+        </array>
+        <array key="Atami_Reguler.otf">
+            <string>Atami-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecurityLegalDescription" rowHeight="354" id="KGk-i7-Jjw" customClass="SecurityLegalDescription" customModule="FandomLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="354"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye3-fZ-v4n">
+                        <rect key="frame" x="20" y="20" width="133.5" height="19"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="16"/>
+                        <color key="textColor" red="0.058823529409999999" green="0.058823529409999999" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="Gip-Pw-Mi8">
+                        <rect key="frame" x="118.5" y="49" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="75d-8J-dYg"/>
+                            <constraint firstAttribute="height" constant="80" id="SbY-1B-hUM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEGAL COMPANY NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-aL-Zmt">
+                        <rect key="frame" x="20" y="149" width="133" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEGAL FORM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFt-aR-3mC">
+                        <rect key="frame" x="20" y="172" width="72" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INCORPORATION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRp-Lb-hCq">
+                        <rect key="frame" x="20" y="195" width="126.5" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRATION NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a8-mU-TMI">
+                        <rect key="frame" x="20" y="218" width="133.5" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NUMBER OF FOUNDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V26-8Z-txm">
+                        <rect key="frame" x="20" y="241" width="130" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEAM SIZE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-Hs-aYO">
+                        <rect key="frame" x="20" y="264" width="62" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST FUNDING ROUND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVN-w8-Dsd">
+                        <rect key="frame" x="20" y="287" width="126.5" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXISTING SHARE CAPITAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLd-Ad-IfM">
+                        <rect key="frame" x="20" y="310" width="144.5" height="13"/>
+                        <fontDescription key="fontDescription" name="Atami-Bold" family="Atami" pointSize="11"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEGAL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-i1-ZpK">
+                        <rect key="frame" x="241.5" y="149.5" width="65.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8h-HB-q3O">
+                        <rect key="frame" x="283" y="172.5" width="24" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVv-WG-jBe">
+                        <rect key="frame" x="284.5" y="195.5" width="22.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-v5-r88">
+                        <rect key="frame" x="269.5" y="218.5" width="37.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-T6-ezW">
+                        <rect key="frame" x="269" y="241.5" width="38" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teamSize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frl-JP-XBw">
+                        <rect key="frame" x="263" y="264.5" width="44" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funding Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnk-ma-Hc6">
+                        <rect key="frame" x="240" y="287.5" width="67" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRT-oM-pFG">
+                        <rect key="frame" x="274" y="310.5" width="33" height="12"/>
+                        <fontDescription key="fontDescription" name="Atami-Regular" family="Atami" pointSize="10"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AVv-WG-jBe" secondAttribute="trailing" constant="10" id="0LJ-6q-ofq"/>
+                    <constraint firstItem="Pea-T6-ezW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V26-8Z-txm" secondAttribute="trailing" constant="10" id="0n0-Zm-im8"/>
+                    <constraint firstItem="GFt-aR-3mC" firstAttribute="leading" secondItem="KGW-aL-Zmt" secondAttribute="leading" id="1ap-yt-Xme"/>
+                    <constraint firstItem="Pea-T6-ezW" firstAttribute="centerY" secondItem="V26-8Z-txm" secondAttribute="centerY" id="2Hd-GQ-gkO"/>
+                    <constraint firstItem="Nnk-ma-Hc6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yVN-w8-Dsd" secondAttribute="trailing" constant="10" id="5fK-ac-x9R"/>
+                    <constraint firstItem="Gip-Pw-Mi8" firstAttribute="top" secondItem="Ye3-fZ-v4n" secondAttribute="bottom" constant="10" id="6Ol-BM-qaL"/>
+                    <constraint firstItem="x8h-HB-q3O" firstAttribute="centerY" secondItem="GFt-aR-3mC" secondAttribute="centerY" id="7qv-ri-qF5"/>
+                    <constraint firstItem="KGW-aL-Zmt" firstAttribute="top" secondItem="Gip-Pw-Mi8" secondAttribute="bottom" constant="20" id="AWB-pV-2iv"/>
+                    <constraint firstItem="7hB-i1-ZpK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGW-aL-Zmt" secondAttribute="trailing" constant="10" id="D3m-oD-Wye"/>
+                    <constraint firstItem="yVN-w8-Dsd" firstAttribute="leading" secondItem="Aqz-Hs-aYO" secondAttribute="leading" id="DEj-Fd-PHX"/>
+                    <constraint firstItem="WRp-Lb-hCq" firstAttribute="leading" secondItem="GFt-aR-3mC" secondAttribute="leading" id="DR5-wS-RTz"/>
+                    <constraint firstItem="Ye3-fZ-v4n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ep7-dd-p1p"/>
+                    <constraint firstItem="Nnk-ma-Hc6" firstAttribute="centerY" secondItem="yVN-w8-Dsd" secondAttribute="centerY" id="FV0-Tp-pir"/>
+                    <constraint firstItem="uLd-Ad-IfM" firstAttribute="top" secondItem="yVN-w8-Dsd" secondAttribute="bottom" constant="10" id="Ga3-I3-ePD"/>
+                    <constraint firstAttribute="trailing" secondItem="GRT-oM-pFG" secondAttribute="trailing" constant="10" id="IPc-ny-7o7"/>
+                    <constraint firstAttribute="trailing" secondItem="F3Y-v5-r88" secondAttribute="trailing" constant="10" id="Jdd-S3-sMT"/>
+                    <constraint firstItem="Gip-Pw-Mi8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KRJ-Hj-9Np"/>
+                    <constraint firstItem="V26-8Z-txm" firstAttribute="top" secondItem="3a8-mU-TMI" secondAttribute="bottom" constant="10" id="Lkp-sg-60u"/>
+                    <constraint firstItem="x8h-HB-q3O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GFt-aR-3mC" secondAttribute="trailing" constant="10" id="MQF-gx-Vxi"/>
+                    <constraint firstItem="yVN-w8-Dsd" firstAttribute="top" secondItem="Aqz-Hs-aYO" secondAttribute="bottom" constant="10" id="N4O-KX-obe"/>
+                    <constraint firstItem="Aqz-Hs-aYO" firstAttribute="leading" secondItem="V26-8Z-txm" secondAttribute="leading" id="NR7-82-oEw"/>
+                    <constraint firstItem="AVv-WG-jBe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WRp-Lb-hCq" secondAttribute="trailing" constant="10" id="Npw-Kw-11k"/>
+                    <constraint firstAttribute="trailing" secondItem="frl-JP-XBw" secondAttribute="trailing" constant="10" id="Nwb-Yj-N6G"/>
+                    <constraint firstItem="V26-8Z-txm" firstAttribute="leading" secondItem="3a8-mU-TMI" secondAttribute="leading" id="Oqb-Ko-UF1"/>
+                    <constraint firstItem="Aqz-Hs-aYO" firstAttribute="top" secondItem="V26-8Z-txm" secondAttribute="bottom" constant="10" id="QL1-TY-24O"/>
+                    <constraint firstItem="GFt-aR-3mC" firstAttribute="top" secondItem="KGW-aL-Zmt" secondAttribute="bottom" constant="10" id="RbH-Vw-zBr"/>
+                    <constraint firstAttribute="bottom" secondItem="uLd-Ad-IfM" secondAttribute="bottom" priority="250" constant="10" id="TSD-jv-hpH"/>
+                    <constraint firstItem="Ye3-fZ-v4n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TjK-Xg-Ul7"/>
+                    <constraint firstItem="AVv-WG-jBe" firstAttribute="centerY" secondItem="WRp-Lb-hCq" secondAttribute="centerY" id="TjT-cR-uzq"/>
+                    <constraint firstAttribute="trailing" secondItem="7hB-i1-ZpK" secondAttribute="trailing" constant="10" id="TjX-mh-J9L"/>
+                    <constraint firstAttribute="trailing" secondItem="Nnk-ma-Hc6" secondAttribute="trailing" constant="10" id="Tlh-fv-6wh"/>
+                    <constraint firstItem="uLd-Ad-IfM" firstAttribute="leading" secondItem="yVN-w8-Dsd" secondAttribute="leading" id="VCF-rP-3at"/>
+                    <constraint firstItem="3a8-mU-TMI" firstAttribute="leading" secondItem="WRp-Lb-hCq" secondAttribute="leading" id="Xla-ec-ldJ"/>
+                    <constraint firstItem="GRT-oM-pFG" firstAttribute="centerY" secondItem="uLd-Ad-IfM" secondAttribute="centerY" id="cUg-9q-f2k"/>
+                    <constraint firstItem="KGW-aL-Zmt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cVx-Y8-6e0"/>
+                    <constraint firstItem="GRT-oM-pFG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uLd-Ad-IfM" secondAttribute="trailing" constant="10" id="d9W-PN-sbr"/>
+                    <constraint firstItem="frl-JP-XBw" firstAttribute="centerY" secondItem="Aqz-Hs-aYO" secondAttribute="centerY" id="gbr-tA-LG9"/>
+                    <constraint firstItem="3a8-mU-TMI" firstAttribute="top" secondItem="WRp-Lb-hCq" secondAttribute="bottom" constant="10" id="hGc-t7-a6Q"/>
+                    <constraint firstItem="F3Y-v5-r88" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3a8-mU-TMI" secondAttribute="trailing" constant="10" id="mk0-lz-pcE"/>
+                    <constraint firstItem="frl-JP-XBw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Aqz-Hs-aYO" secondAttribute="trailing" constant="10" id="oe6-k0-bXf"/>
+                    <constraint firstItem="WRp-Lb-hCq" firstAttribute="top" secondItem="GFt-aR-3mC" secondAttribute="bottom" constant="10" id="rgn-5v-51C"/>
+                    <constraint firstItem="F3Y-v5-r88" firstAttribute="centerY" secondItem="3a8-mU-TMI" secondAttribute="centerY" id="rhf-UG-pLJ"/>
+                    <constraint firstAttribute="trailing" secondItem="x8h-HB-q3O" secondAttribute="trailing" constant="10" id="vsn-Pc-hEh"/>
+                    <constraint firstItem="7hB-i1-ZpK" firstAttribute="centerY" secondItem="KGW-aL-Zmt" secondAttribute="centerY" id="wLG-fb-Wk0"/>
+                    <constraint firstAttribute="trailing" secondItem="Pea-T6-ezW" secondAttribute="trailing" constant="10" id="zGI-qM-tpH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="capital" destination="GRT-oM-pFG" id="Fh1-X4-QXy"/>
+                <outlet property="form" destination="x8h-HB-q3O" id="Qnp-3H-hYc"/>
+                <outlet property="formDate" destination="AVv-WG-jBe" id="UgX-qy-Afe"/>
+                <outlet property="founder" destination="Pea-T6-ezW" id="eBy-AL-wCT"/>
+                <outlet property="fundingRound" destination="Nnk-ma-Hc6" id="t4y-xB-DNp"/>
+                <outlet property="graphImage" destination="Gip-Pw-Mi8" id="AsT-c6-aFa"/>
+                <outlet property="legalName" destination="7hB-i1-ZpK" id="h8E-S7-C0d"/>
+                <outlet property="number" destination="F3Y-v5-r88" id="ecW-tJ-Opn"/>
+                <outlet property="teamSize" destination="frl-JP-XBw" id="RsG-co-eDR"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="226.33928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="graph" width="100" height="67"/>
+    </resources>
+</document>

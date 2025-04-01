@@ -1,0 +1,16 @@
+So far, you have learned that body is a computed read-only property and can only return ONE object
+that is some View. What if you want to show multiple views though?
+
+the body property can only return one view. You will get an error if you try to return
+more than one view in the body property.
+
+ZStack Alignment Choices
+• center
+• leading
+• trailing
+• top
+• bottom
+• topLeading
+• topTrailing
+• bottomLeading
+• bottomTrailing

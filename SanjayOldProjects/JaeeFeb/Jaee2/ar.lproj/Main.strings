@@ -1,0 +1,300 @@
+
+/* Class = "UILabel"; text = "1:00am - 3:00pm"; ObjectID = "0Gc-Yj-KFD"; */
+"0Gc-Yj-KFD.text" = "1:00am - 3:00pm";
+
+/* Class = "UIButton"; normalTitle = "حفظ"; ObjectID = "0cj-ga-fyc"; */
+"0cj-ga-fyc.normalTitle" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = " الرجوع الى السلة"; ObjectID = "1EC-mF-AsL"; */
+"1EC-mF-AsL.normalTitle" = " الرجوع الى السلة";
+
+/* Class = "UIBarButtonItem"; title = "اضف المنتج"; ObjectID = "1PT-GX-Q4u"; */
+"1PT-GX-Q4u.title" = "اضف المنتج";
+
+/* Class = "UILabel"; text = "ملف الشخصي"; ObjectID = "1fJ-Xt-yvo"; */
+"1fJ-Xt-yvo.text" = "ملف الشخصي";
+
+/* Class = "UIButton"; normalTitle = " تقديم الطلب "; ObjectID = "1qn-hO-eZg"; */
+"1qn-hO-eZg.normalTitle" = " تقديم الطلب ";
+
+/* Class = "UIButton"; normalTitle = "الان"; ObjectID = "21e-KQ-ww3"; */
+"21e-KQ-ww3.normalTitle" = "الان";
+
+/* Class = "UITextField"; placeholder = "* * * * * *"; ObjectID = "26c-BL-zig"; */
+"26c-BL-zig.placeholder" = "* * * * * *";
+
+/* Class = "UILabel"; text = "22"; ObjectID = "2BZ-N0-exs"; */
+"2BZ-N0-exs.text" = "22";
+
+/* Class = "UITextField"; placeholder = "0555555555"; ObjectID = "2He-QV-fFZ"; */
+"2He-QV-fFZ.placeholder" = "0555555555";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "2oS-k6-Aub"; */
+"2oS-k6-Aub.text" = "Total";
+
+/* Class = "UILabel"; text = "driver name"; ObjectID = "4Lr-Pt-1eQ"; */
+"4Lr-Pt-1eQ.text" = "driver name";
+
+/* Class = "UILabel"; text = "عندك حساب من قبل ؟"; ObjectID = "8FS-eb-jrK"; */
+"8FS-eb-jrK.text" = "عندك حساب من قبل ؟";
+
+/* Class = "UILabel"; text = "تسجيل"; ObjectID = "91M-Z6-abm"; */
+"91M-Z6-abm.text" = "تسجيل";
+
+/* Class = "UILabel"; text = "تآكيد "; ObjectID = "93H-tf-KJP"; */
+"93H-tf-KJP.text" = "تآكيد ";
+
+/* Class = "UIButton"; normalTitle = "تعديل"; ObjectID = "961-I0-dkb"; */
+"961-I0-dkb.normalTitle" = "تعديل";
+
+/* Class = "UITextField"; placeholder = " اعادة كلمه المرور الجديدة"; ObjectID = "98x-Gn-A39"; */
+"98x-Gn-A39.placeholder" = " اعادة كلمه المرور الجديدة";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "9jr-Ld-qfS"; */
+"9jr-Ld-qfS.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "الطلبات السابقة"; ObjectID = "BWr-Hv-hNn"; */
+"BWr-Hv-hNn.text" = "الطلبات السابقة";
+
+/* Class = "UITextView"; text = "عند استخدامك للتطبيق لا بد التنبه للضوابط التالية:\n\nالمستخدم:\n\n1- التطبيق غير مسؤول عن أي تعاقدات، أو خلافات، أو نشاطات معك ومع المتجر المعروض في التطبيق.\n\n2- لدى بعض المتاجر شروط وضمانات...وغيرها؛ \"جاي\" غير مسؤول عنها.\n\n3- عند استخدام \"جاي\" ؛ لا تقوم بطلبات وهمية أو دعاية وهمية لأي غرض، أو سبب؛ حتى لا يتم إيقافك، وللتطبيق الحق في إقامة الدعاوى ضدك.\n\n4- التطبيق ليس له رسوم من المنتجات المعروضة، وأيضا نحن وسيطون بين المتجر والمندوب فقط.\n\n-----\n\nالمتاجر :\n\n1- التطبيق غير مسؤول عن أي تعاقدات، أو خلافات، أو نشاطات معك ومع المندوبين المعروض في التطبيق.\n\n2- لدى بعض السائق شروط وضمانات...وغيرها؛ \"جاي\" غير مسؤول عنها.\n\n3- عند استخدام \"جاي\" ؛ لا تقوم بعرض منتجات وهمية أو دعاية وهمية لأي غرض، أو سبب؛ حتى لا يتم إيقافك، وللتطبيق الحق في إقامة الدعاوى ضدك.\n\n4- التطبيق ليس له رسوم من المنتجات المعروضة، وأيضا نحن وسيطون بين المشتري والمندوب فقط.\n\n5- عند استلام المندوب طلبك سينتظر 30 دقيقة فقط من وقت مكالمته الاولى لم حتى تقوم بالرد عليه ، وفي حال تكرر عدم الرد سيتم طردك ، وللتطبيق الصلاحية في ذلك.\n\n\n\nخدمة العملاء: تريد المساعدة؟ خدمة العملاء متاحة على مدار الساعه 7/24 info@jaeeapp.com"; ObjectID = "BXY-x3-u8n"; */
+"BXY-x3-u8n.text" = "عند استخدامك للتطبيق لا بد التنبه للضوابط التالية:\n\nالمستخدم:\n\n1- التطبيق غير مسؤول عن أي تعاقدات، أو خلافات، أو نشاطات معك ومع المتجر المعروض في التطبيق.\n\n2- لدى بعض المتاجر شروط وضمانات...وغيرها؛ \"جاي\" غير مسؤول عنها.\n\n3- عند استخدام \"جاي\" ؛ لا تقوم بطلبات وهمية أو دعاية وهمية لأي غرض، أو سبب؛ حتى لا يتم إيقافك، وللتطبيق الحق في إقامة الدعاوى ضدك.\n\n4- التطبيق ليس له رسوم من المنتجات المعروضة، وأيضا نحن وسيطون بين المتجر والمندوب فقط.\n\n-----\n\nالمتاجر :\n\n1- التطبيق غير مسؤول عن أي تعاقدات، أو خلافات، أو نشاطات معك ومع المندوبين المعروض في التطبيق.\n\n2- لدى بعض السائق شروط وضمانات...وغيرها؛ \"جاي\" غير مسؤول عنها.\n\n3- عند استخدام \"جاي\" ؛ لا تقوم بعرض منتجات وهمية أو دعاية وهمية لأي غرض، أو سبب؛ حتى لا يتم إيقافك، وللتطبيق الحق في إقامة الدعاوى ضدك.\n\n4- التطبيق ليس له رسوم من المنتجات المعروضة، وأيضا نحن وسيطون بين المشتري والمندوب فقط.\n\n5- عند استلام المندوب طلبك سينتظر 30 دقيقة فقط من وقت مكالمته الاولى لم حتى تقوم بالرد عليه ، وفي حال تكرر عدم الرد سيتم طردك ، وللتطبيق الصلاحية في ذلك.\n\n\n\nخدمة العملاء: تريد المساعدة؟ خدمة العملاء متاحة على مدار الساعه 7/24 info@jaeeapp.com";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Bdw-cP-aBG"; */
+"Bdw-cP-aBG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "دخول"; ObjectID = "Dd2-r1-xBs"; */
+"Dd2-r1-xBs.text" = "دخول";
+
+/* Class = "UITextField"; placeholder = "آلاسم "; ObjectID = "EWl-Dk-JUj"; */
+"EWl-Dk-JUj.placeholder" = "آلاسم ";
+
+/* Class = "UILabel"; text = "الشروط"; ObjectID = "Ekw-UN-Zjb"; */
+"Ekw-UN-Zjb.text" = "الشروط";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "EmJ-pO-8qd"; */
+"EmJ-pO-8qd.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "استلمنا طلبك طال عمرك/س"; ObjectID = "F8n-y6-MYA"; */
+"F8n-y6-MYA.text" = "استلمنا طلبك طال عمرك/س";
+
+/* Class = "UILabel"; text = "المجموع الكلي:"; ObjectID = "FYk-8L-x52"; */
+"FYk-8L-x52.text" = ":المجموع الكلي";
+
+/* Class = "UIButton"; normalTitle = "دخول"; ObjectID = "G1J-Pc-bWh"; */
+"G1J-Pc-bWh.normalTitle" = "دخول";
+
+/* Class = "UILabel"; text = "1  "; ObjectID = "GEX-qh-7uZ"; */
+"GEX-qh-7uZ.text" = "1  ";
+
+/* Class = "UIButton"; normalTitle = "اضغط هنا للذهاب الى موقعك📍"; ObjectID = "GKS-GL-j1x"; */
+"GKS-GL-j1x.normalTitle" = "اضغط هنا للذهاب الى موقعك📍";
+
+/* Class = "UITextView"; text = "مع كثرة المتاجر المتميزة وانتشارها ، \n\nالآن تطبيق \"جاي\" منصة إلكترونية تجمع لك الكثير من المتاجر المجربة ، والمتميزة في أطباقها، ويتيح لك فرصة المشاركة ضمن المتاجر لتتمكن من عرض الآكلات الشهية بالإضافة لتوفير مندوبين بسعر مناسب والتسويق لمنتجاتكم.. \n\n\n\nمن خلال التطبيق سوف تتمكن من رؤية \n\nالأقسام- المتاجر-المنتجات \n\nوتتمكن من طلب اي منتج ومتابعه الطلب بواسطة العد التنازلي بعد تاكيد الطلب. \n\n\"جاي \" دايم في خدمتكم في مدينة الرياض ، وقريبا .. في أنحاء المملكة.\n\nخدمة العملاء: تريد المساعدة؟ خدمة العملاء متاحة على مدار الساعه 7/24 info@jaeeapp.com\n\n او \n\n0560002621"; ObjectID = "Gwy-7A-qBB"; */
+"Gwy-7A-qBB.text" = "مع كثرة المتاجر المتميزة وانتشارها ، \n\nالآن تطبيق \"جاي\" منصة إلكترونية تجمع لك الكثير من المتاجر المجربة ، والمتميزة في أطباقها، ويتيح لك فرصة المشاركة ضمن المتاجر لتتمكن من عرض الآكلات الشهية بالإضافة لتوفير مندوبين بسعر مناسب والتسويق لمنتجاتكم.. \n\n\n\nمن خلال التطبيق سوف تتمكن من رؤية \n\nالأقسام- المتاجر-المنتجات \n\nوتتمكن من طلب اي منتج ومتابعه الطلب بواسطة العد التنازلي بعد تاكيد الطلب. \n\n\"جاي \" دايم في خدمتكم في مدينة الرياض ، وقريبا .. في أنحاء المملكة.\n\nخدمة العملاء: تريد المساعدة؟ خدمة العملاء متاحة على مدار الساعه 7/24 info@jaeeapp.com\n\n او \n\n0560002621";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HkO-O9-XXa"; */
+"HkO-O9-XXa.text" = "Label";
+
+/* Class = "UILabel"; text = "05555555"; ObjectID = "J63-r7-sFh"; */
+"J63-r7-sFh.text" = "05555555";
+
+/* Class = "UILabel"; text = "جاري جلب البيانات..."; ObjectID = "Ji1-NI-6IA"; */
+"Ji1-NI-6IA.text" = "جاري جلب البيانات...";
+
+/* Class = "UITextField"; placeholder = "0000"; ObjectID = "Jk9-XI-4e3"; */
+"Jk9-XI-4e3.placeholder" = "0000";
+
+/* Class = "UILabel"; text = "الموقع التالي هنا "; ObjectID = "KFF-ZO-QJp"; */
+"KFF-ZO-QJp.text" = "الموقع التالي هنا ";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "KLf-wF-y5G"; */
+"KLf-wF-y5G.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "المجموع"; ObjectID = "KmD-fP-jQG"; */
+"KmD-fP-jQG.text" = "المجموع";
+
+/* Class = "UILabel"; text = "آضف منتج  "; ObjectID = "Kvz-NQ-ArH"; */
+"Kvz-NQ-ArH.text" = "آضف منتج  ";
+
+/* Class = "UIButton"; normalTitle = "متابعة "; ObjectID = "LtS-K9-cLp"; */
+"LtS-K9-cLp.normalTitle" = "متابعة ";
+
+/* Class = "UILabel"; text = "جاري جلب البيانات..."; ObjectID = "Lu5-pX-rbd"; */
+"Lu5-pX-rbd.text" = "جاري جلب البيانات...";
+
+/* Class = "UILabel"; text = "المجموع الكلي"; ObjectID = "Mde-C1-Lir"; */
+"Mde-C1-Lir.text" = "المجموع الكلي";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "Msi-ez-C73"; */
+"Msi-ez-C73.normalTitle" = "تحقق";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NBd-Ua-21j"; */
+"NBd-Ua-21j.text" = "Label";
+
+/* Class = "UILabel"; text = "المجموع:"; ObjectID = "Okc-lS-SFd"; */
+"Okc-lS-SFd.text" = ":المجموع";
+
+/* Class = "UIButton"; normalTitle = "تسجيل"; ObjectID = "P3q-cn-S1s"; */
+"P3q-cn-S1s.normalTitle" = "تسجيل";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "P5p-lY-v5k"; */
+"P5p-lY-v5k.text" = "Label";
+
+/* Class = "UILabel"; text = "جاري جلب البيانات..."; ObjectID = "PXq-a1-1j0"; */
+"PXq-a1-1j0.text" = "جاري جلب البيانات...";
+
+/* Class = "UIButton"; normalTitle = "تغير"; ObjectID = "RNu-2o-LWK"; */
+"RNu-2o-LWK.normalTitle" = "تغير";
+
+/* Class = "UITextField"; placeholder = "كلمه المرور الحالة "; ObjectID = "S9d-PZ-LLI"; */
+"S9d-PZ-LLI.placeholder" = "كلمه المرور الحالة ";
+
+/* Class = "UILabel"; text = "1  "; ObjectID = "TEa-Rq-JfN"; */
+"TEa-Rq-JfN.text" = "1  ";
+
+/* Class = "UILabel"; text = "عند دخولك او تسجيلك فآنت موافق على "; ObjectID = "TvY-cd-eO7"; */
+"TvY-cd-eO7.text" = "عند دخولك او تسجيلك فآنت موافق على ";
+
+/* Class = "UIButton"; normalTitle = "الرجوع"; ObjectID = "UHO-lc-DBF"; */
+"UHO-lc-DBF.normalTitle" = "الرجوع";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VmH-zb-qBr"; */
+"VmH-zb-qBr.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = " اختر المقاس"; ObjectID = "X10-Bo-Oyw"; */
+"X10-Bo-Oyw.normalTitle" = " اختر المقاس";
+
+/* Class = "UITextField"; placeholder = "كلمه المرور الجديدة"; ObjectID = "XH2-rs-ypX"; */
+"XH2-rs-ypX.placeholder" = "كلمه المرور الجديدة";
+
+/* Class = "UILabel"; text = " المجموع"; ObjectID = "XJV-W0-0f1"; */
+"XJV-W0-0f1.text" = " المجموع";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "YMY-Lg-tUW"; */
+"YMY-Lg-tUW.text" = "100";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "YRA-iQ-kJU"; */
+"YRA-iQ-kJU.normalTitle" = "رجوع";
+
+/* Class = "UINavigationItem"; title = "اضافة منتج "; ObjectID = "Yqx-iq-y8w"; */
+"Yqx-iq-y8w.title" = "اضافة منتج ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Zar-Dp-5gr"; */
+"Zar-Dp-5gr.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "كلمه المرور الجديدة"; ObjectID = "Zcc-KE-v6c"; */
+"Zcc-KE-v6c.placeholder" = "كلمه المرور الجديدة";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "a5J-zV-Qb3"; */
+"a5J-zV-Qb3.normalTitle" = "تحقق";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aQM-DX-mbw"; */
+"aQM-DX-mbw.text" = "Label";
+
+/* Class = "UILabel"; text = "اسمك الكريم"; ObjectID = "aoZ-Ib-cOV"; */
+"aoZ-Ib-cOV.text" = "اسمك الكريم";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "bMw-8r-rAt"; */
+"bMw-8r-rAt.text" = "10";
+
+/* Class = "UIButton"; normalTitle = "استمرار"; ObjectID = "cUV-7h-d8d"; */
+"cUV-7h-d8d.normalTitle" = "استمرار";
+
+/* Class = "UILabel"; text = "جاي"; ObjectID = "dM6-Pj-7yq"; */
+"dM6-Pj-7yq.text" = "جاي";
+
+/* Class = "UITextField"; placeholder = " رقم الجوال"; ObjectID = "etM-qo-P2N"; */
+"etM-qo-P2N.placeholder" = " رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "طلباتك"; ObjectID = "ew1-7j-X1u"; */
+"ew1-7j-X1u.normalTitle" = "طلباتك";
+
+/* Class = "UILabel"; text = "100$"; ObjectID = "gQ2-Ca-had"; */
+"gQ2-Ca-had.text" = "100$";
+
+/* Class = "UIButton"; normalTitle = "الغاء الطلب "; ObjectID = "gQ7-1Y-Q0q"; */
+"gQ7-1Y-Q0q.normalTitle" = "الغاء الطلب ";
+
+/* Class = "UILabel"; text = "نسيت كلمة المرور ؟"; ObjectID = "gWT-X8-oj4"; */
+"gWT-X8-oj4.text" = "نسيت كلمة المرور ؟";
+
+/* Class = "UIButton"; normalTitle = "تغير"; ObjectID = "gba-kh-eg2"; */
+"gba-kh-eg2.normalTitle" = "تغير";
+
+/* Class = "UILabel"; text = "الحالة:"; ObjectID = "gqe-09-t5L"; */
+"gqe-09-t5L.text" = "الحالة:";
+
+/* Class = "UILabel"; text = "Name of Shop "; ObjectID = "h2b-8V-PPY"; */
+"h2b-8V-PPY.text" = "Name of Shop ";
+
+/* Class = "UITextField"; placeholder = " رقم الجوال"; ObjectID = "hcm-Cd-sac"; */
+"hcm-Cd-sac.placeholder" = " رقم الجوال";
+
+/* Class = "UILabel"; text = "تفاصيل الطلب "; ObjectID = "i3G-vq-et2"; */
+"i3G-vq-et2.text" = "تفاصيل الطلب ";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "ikg-Ea-pgq"; */
+"ikg-Ea-pgq.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "23"; ObjectID = "im3-sq-lLQ"; */
+"im3-sq-lLQ.text" = "23";
+
+/* Class = "UIBarButtonItem"; title = "رجوع"; ObjectID = "jO2-1g-1Kk"; */
+"jO2-1g-1Kk.title" = "رجوع";
+
+/* Class = "UIButton"; normalTitle = "حفظ"; ObjectID = "jcx-A7-DIe"; */
+"jcx-A7-DIe.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "جاري جلب البيانات..."; ObjectID = "k5F-VJ-fcy"; */
+"k5F-VJ-fcy.text" = "جاري جلب البيانات...";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "lOV-1a-7KT"; */
+"lOV-1a-7KT.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "عن التطبيق "; ObjectID = "lpb-MM-z7m"; */
+"lpb-MM-z7m.text" = "عن التطبيق ";
+
+/* Class = "UITextField"; placeholder = "0000"; ObjectID = "meH-St-tD1"; */
+"meH-St-tD1.placeholder" = "0000";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "nQ9-CD-Xhm"; */
+"nQ9-CD-Xhm.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "200$"; ObjectID = "nUp-Y3-G38"; */
+"nUp-Y3-G38.text" = "200$";
+
+/* Class = "UILabel"; text = "دخول"; ObjectID = "oLo-WQ-fJs"; */
+"oLo-WQ-fJs.text" = "دخول";
+
+/* Class = "UILabel"; text = "هلا والله "; ObjectID = "reM-r9-6AQ"; */
+"reM-r9-6AQ.text" = "هلا والله ";
+
+/* Class = "UITextField"; placeholder = "آلاسم "; ObjectID = "tbO-pT-uXR"; */
+"tbO-pT-uXR.placeholder" = "آلاسم ";
+
+/* Class = "UITextField"; placeholder = "* * * * * *"; ObjectID = "toC-Uk-jOo"; */
+"toC-Uk-jOo.placeholder" = "* * * * * *";
+
+/* Class = "UITextField"; placeholder = " اعادة كلمه المرور الجديدة"; ObjectID = "twn-fD-AdD"; */
+"twn-fD-AdD.placeholder" = " اعادة كلمه المرور الجديدة";
+
+/* Class = "UILabel"; text = "#####"; ObjectID = "w4l-Hk-hwF"; */
+"w4l-Hk-hwF.text" = "#####";
+
+/* Class = "UILabel"; text = "رسوم التوصيل"; ObjectID = "w7c-4x-AdR"; */
+"w7c-4x-AdR.text" = "رسوم التوصيل";
+
+/* Class = "UILabel"; text = "استرجاع كلمة المرور"; ObjectID = "yDH-JH-LkS"; */
+"yDH-JH-LkS.text" = "استرجاع كلمة المرور";
+
+/* Class = "UILabel"; text = "اختر الوقت المفضل لتوصيل الطلب "; ObjectID = "yb0-AJ-2cW"; */
+"yb0-AJ-2cW.text" = "اختر الوقت المفضل لتوصيل الطلب ";
+
+/* Class = "UIButton"; normalTitle = "آبدا التسوق "; ObjectID = "yeP-5H-5sQ"; */
+"yeP-5H-5sQ.normalTitle" = "آبدا التسوق ";
+
+/* Class = "UILabel"; text = "دخول"; ObjectID = "z1B-rv-eKp"; */
+"z1B-rv-eKp.text" = "دخول";
+
+/* Class = "UILabel"; text = "تغير كلمة المرور"; ObjectID = "zc8-rs-X1y"; */
+"zc8-rs-X1y.text" = "تغير كلمة المرور";

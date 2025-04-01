@@ -1,5 +1,5 @@
 import Foundation
-
+/*
 class Document
 {
 
@@ -92,3 +92,4 @@ class MultiFunctionMachine : MultiFunctionDevice
     printer.print(d) // Decorator
   }
 }
+*/

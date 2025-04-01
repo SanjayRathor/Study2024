@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C571D4B46D76EFD60C569F5 /* Pods_FourBrickSIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E724EFC3332D11AF55D2B1 /* Pods_FourBrickSIP.framework */; };
+		B587404029007F5200D06941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B587403F29007F5200D06941 /* AppDelegate.m */; };
+		B587404929007F5200D06941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B587404729007F5200D06941 /* Main.storyboard */; };
+		B587404B29007F5400D06941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B587404A29007F5400D06941 /* Assets.xcassets */; };
+		B587404E29007F5400D06941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B587404C29007F5400D06941 /* LaunchScreen.storyboard */; };
+		B587405129007F5400D06941 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B587405029007F5400D06941 /* main.m */; };
+		B587405E29007FBD00D06941 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B587405A29007FBD00D06941 /* SIHomeViewController.m */; };
+		B587405F29007FBD00D06941 /* ipjsuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B587405B29007FBD00D06941 /* ipjsuaViewController.m */; };
+		B587406029007FBD00D06941 /* SICallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B587405C29007FBD00D06941 /* SICallViewController.m */; };
+		B587407F29007FF400D06941 /* GSDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406229007FF300D06941 /* GSDispatch.m */; };
+		B587408029007FF400D06941 /* GSRingback.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406829007FF300D06941 /* GSRingback.m */; };
+		B587408129007FF400D06941 /* GSOutgoingCall.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406A29007FF300D06941 /* GSOutgoingCall.m */; };
+		B587408229007FF400D06941 /* GSCall.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406B29007FF300D06941 /* GSCall.m */; };
+		B587408329007FF400D06941 /* GSIncomingCall.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406C29007FF300D06941 /* GSIncomingCall.m */; };
+		B587408429007FF400D06941 /* GSNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406E29007FF300D06941 /* GSNotifications.m */; };
+		B587408529007FF400D06941 /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B587406F29007FF300D06941 /* UserAccount.m */; };
+		B587408629007FF400D06941 /* GSUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = B587407129007FF300D06941 /* GSUserAgent.m */; };
+		B587408729007FF400D06941 /* GSCodecInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B587407629007FF400D06941 /* GSCodecInfo.m */; };
+		B587408829007FF400D06941 /* GSPJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B587407729007FF400D06941 /* GSPJUtil.m */; };
+		B587408929007FF400D06941 /* GSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B587407829007FF400D06941 /* GSAccount.m */; };
+		B587408F29007FFD00D06941 /* GSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B587408B29007FFD00D06941 /* GSConfiguration.m */; };
+		B587409029007FFD00D06941 /* GSAccountConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B587408C29007FFD00D06941 /* GSAccountConfiguration.m */; };
+		B58740952900811200D06941 /* SICallInitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58740942900811200D06941 /* SICallInitManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D51B3ADF0F97B65F6649811 /* Pods-FourBrickSIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourBrickSIP.debug.xcconfig"; path = "Target Support Files/Pods-FourBrickSIP/Pods-FourBrickSIP.debug.xcconfig"; sourceTree = "<group>"; };
+		50F7113C0BC3673DC61530DC /* Pods-FourBrickSIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourBrickSIP.release.xcconfig"; path = "Target Support Files/Pods-FourBrickSIP/Pods-FourBrickSIP.release.xcconfig"; sourceTree = "<group>"; };
+		B587403B29007F5200D06941 /* FourBrickSIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBrickSIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B587403E29007F5200D06941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B587403F29007F5200D06941 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B587404829007F5200D06941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B587404A29007F5400D06941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B587404D29007F5400D06941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B587404F29007F5400D06941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B587405029007F5400D06941 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B587405829007FBD00D06941 /* SICallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICallViewController.h; sourceTree = "<group>"; };
+		B587405929007FBD00D06941 /* ipjsuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipjsuaViewController.h; sourceTree = "<group>"; };
+		B587405A29007FBD00D06941 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
+		B587405B29007FBD00D06941 /* ipjsuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ipjsuaViewController.m; sourceTree = "<group>"; };
+		B587405C29007FBD00D06941 /* SICallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICallViewController.m; sourceTree = "<group>"; };
+		B587405D29007FBD00D06941 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
+		B587406229007FF300D06941 /* GSDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDispatch.m; sourceTree = "<group>"; };
+		B587406329007FF300D06941 /* GSUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSUserAgent.h; sourceTree = "<group>"; };
+		B587406429007FF300D06941 /* GSCall+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSCall+Private.h"; sourceTree = "<group>"; };
+		B587406529007FF300D06941 /* GSCodecInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCodecInfo.h; sourceTree = "<group>"; };
+		B587406629007FF300D06941 /* GSAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAccount.h; sourceTree = "<group>"; };
+		B587406729007FF300D06941 /* GSPJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPJUtil.h; sourceTree = "<group>"; };
+		B587406829007FF300D06941 /* GSRingback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRingback.m; sourceTree = "<group>"; };
+		B587406929007FF300D06941 /* Gossip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gossip.h; sourceTree = "<group>"; };
+		B587406A29007FF300D06941 /* GSOutgoingCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSOutgoingCall.m; sourceTree = "<group>"; };
+		B587406B29007FF300D06941 /* GSCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCall.m; sourceTree = "<group>"; };
+		B587406C29007FF300D06941 /* GSIncomingCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSIncomingCall.m; sourceTree = "<group>"; };
+		B587406D29007FF300D06941 /* GSCodecInfo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSCodecInfo+Private.h"; sourceTree = "<group>"; };
+		B587406E29007FF300D06941 /* GSNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNotifications.m; sourceTree = "<group>"; };
+		B587406F29007FF300D06941 /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
+		B587407029007FF300D06941 /* PJSIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJSIP.h; sourceTree = "<group>"; };
+		B587407129007FF300D06941 /* GSUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSUserAgent.m; sourceTree = "<group>"; };
+		B587407229007FF300D06941 /* GSDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDispatch.h; sourceTree = "<group>"; };
+		B587407329007FF300D06941 /* GSOutgoingCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSOutgoingCall.h; sourceTree = "<group>"; };
+		B587407429007FF300D06941 /* GSRingback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRingback.h; sourceTree = "<group>"; };
+		B587407529007FF300D06941 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		B587407629007FF400D06941 /* GSCodecInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCodecInfo.m; sourceTree = "<group>"; };
+		B587407729007FF400D06941 /* GSPJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPJUtil.m; sourceTree = "<group>"; };
+		B587407829007FF400D06941 /* GSAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAccount.m; sourceTree = "<group>"; };
+		B587407929007FF400D06941 /* GSIncomingCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSIncomingCall.h; sourceTree = "<group>"; };
+		B587407A29007FF400D06941 /* GSCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCall.h; sourceTree = "<group>"; };
+		B587407B29007FF400D06941 /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		B587407C29007FF400D06941 /* GSNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNotifications.h; sourceTree = "<group>"; };
+		B587407D29007FF400D06941 /* GSUserAgent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSUserAgent+Private.h"; sourceTree = "<group>"; };
+		B587407E29007FF400D06941 /* GSAccount+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSAccount+Private.h"; sourceTree = "<group>"; };
+		B587408B29007FFD00D06941 /* GSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSConfiguration.m; sourceTree = "<group>"; };
+		B587408C29007FFD00D06941 /* GSAccountConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAccountConfiguration.m; sourceTree = "<group>"; };
+		B587408D29007FFD00D06941 /* GSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSConfiguration.h; sourceTree = "<group>"; };
+		B587408E29007FFD00D06941 /* GSAccountConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAccountConfiguration.h; sourceTree = "<group>"; };
+		B58740912900805B00D06941 /* FourBrickSIP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FourBrickSIP.entitlements; sourceTree = "<group>"; };
+		B58740932900811200D06941 /* SICallInitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICallInitManager.h; sourceTree = "<group>"; };
+		B58740942900811200D06941 /* SICallInitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICallInitManager.m; sourceTree = "<group>"; };
+		C0E724EFC3332D11AF55D2B1 /* Pods_FourBrickSIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourBrickSIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B587403829007F5200D06941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C571D4B46D76EFD60C569F5 /* Pods_FourBrickSIP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8B0136FA71257BF934F4F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E724EFC3332D11AF55D2B1 /* Pods_FourBrickSIP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B587403229007F5200D06941 = {
+			isa = PBXGroup;
+			children = (
+				B587403D29007F5200D06941 /* FourBrickSIP */,
+				B587403C29007F5200D06941 /* Products */,
+				DDA156CA37586DD88DCFA2AB /* Pods */,
+				0B8B0136FA71257BF934F4F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B587403C29007F5200D06941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B587403B29007F5200D06941 /* FourBrickSIP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B587403D29007F5200D06941 /* FourBrickSIP */ = {
+			isa = PBXGroup;
+			children = (
+				B58740912900805B00D06941 /* FourBrickSIP.entitlements */,
+				B587406129007FF300D06941 /* Vendor */,
+				B587408A29007FFD00D06941 /* Configurations */,
+				B587403E29007F5200D06941 /* AppDelegate.h */,
+				B587403F29007F5200D06941 /* AppDelegate.m */,
+				B58740922900811200D06941 /* CallingManager */,
+				B587405729007FBD00D06941 /* ViewControllers */,
+				B587404729007F5200D06941 /* Main.storyboard */,
+				B587404A29007F5400D06941 /* Assets.xcassets */,
+				B587404C29007F5400D06941 /* LaunchScreen.storyboard */,
+				B587404F29007F5400D06941 /* Info.plist */,
+				B587405029007F5400D06941 /* main.m */,
+			);
+			path = FourBrickSIP;
+			sourceTree = "<group>";
+		};
+		B587405729007FBD00D06941 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B587405829007FBD00D06941 /* SICallViewController.h */,
+				B587405929007FBD00D06941 /* ipjsuaViewController.h */,
+				B587405A29007FBD00D06941 /* SIHomeViewController.m */,
+				B587405B29007FBD00D06941 /* ipjsuaViewController.m */,
+				B587405C29007FBD00D06941 /* SICallViewController.m */,
+				B587405D29007FBD00D06941 /* SIHomeViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B587406129007FF300D06941 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B587406929007FF300D06941 /* Gossip.h */,
+				B587406629007FF300D06941 /* GSAccount.h */,
+				B587407829007FF400D06941 /* GSAccount.m */,
+				B587407E29007FF400D06941 /* GSAccount+Private.h */,
+				B587407A29007FF400D06941 /* GSCall.h */,
+				B587406B29007FF300D06941 /* GSCall.m */,
+				B587406429007FF300D06941 /* GSCall+Private.h */,
+				B587406529007FF300D06941 /* GSCodecInfo.h */,
+				B587407629007FF400D06941 /* GSCodecInfo.m */,
+				B587406D29007FF300D06941 /* GSCodecInfo+Private.h */,
+				B587407229007FF300D06941 /* GSDispatch.h */,
+				B587406229007FF300D06941 /* GSDispatch.m */,
+				B587407929007FF400D06941 /* GSIncomingCall.h */,
+				B587406C29007FF300D06941 /* GSIncomingCall.m */,
+				B587407C29007FF400D06941 /* GSNotifications.h */,
+				B587406E29007FF300D06941 /* GSNotifications.m */,
+				B587407329007FF300D06941 /* GSOutgoingCall.h */,
+				B587406A29007FF300D06941 /* GSOutgoingCall.m */,
+				B587406729007FF300D06941 /* GSPJUtil.h */,
+				B587407729007FF400D06941 /* GSPJUtil.m */,
+				B587407429007FF300D06941 /* GSRingback.h */,
+				B587406829007FF300D06941 /* GSRingback.m */,
+				B587406329007FF300D06941 /* GSUserAgent.h */,
+				B587407129007FF300D06941 /* GSUserAgent.m */,
+				B587407D29007FF400D06941 /* GSUserAgent+Private.h */,
+				B587407029007FF300D06941 /* PJSIP.h */,
+				B587407B29007FF400D06941 /* UserAccount.h */,
+				B587406F29007FF300D06941 /* UserAccount.m */,
+				B587407529007FF300D06941 /* Util.h */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B587408A29007FFD00D06941 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B587408B29007FFD00D06941 /* GSConfiguration.m */,
+				B587408C29007FFD00D06941 /* GSAccountConfiguration.m */,
+				B587408D29007FFD00D06941 /* GSConfiguration.h */,
+				B587408E29007FFD00D06941 /* GSAccountConfiguration.h */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		B58740922900811200D06941 /* CallingManager */ = {
+			isa = PBXGroup;
+			children = (
+				B58740932900811200D06941 /* SICallInitManager.h */,
+				B58740942900811200D06941 /* SICallInitManager.m */,
+			);
+			path = CallingManager;
+			sourceTree = "<group>";
+		};
+		DDA156CA37586DD88DCFA2AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D51B3ADF0F97B65F6649811 /* Pods-FourBrickSIP.debug.xcconfig */,
+				50F7113C0BC3673DC61530DC /* Pods-FourBrickSIP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B587403A29007F5200D06941 /* FourBrickSIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B587405429007F5400D06941 /* Build configuration list for PBXNativeTarget "FourBrickSIP" */;
+			buildPhases = (
+				221FED4C2A1D2DEE132D3608 /* [CP] Check Pods Manifest.lock */,
+				B587403729007F5200D06941 /* Sources */,
+				B587403829007F5200D06941 /* Frameworks */,
+				B587403929007F5200D06941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourBrickSIP;
+			productName = FourBrickSIP;
+			productReference = B587403B29007F5200D06941 /* FourBrickSIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B587403329007F5200D06941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B587403A29007F5200D06941 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B587403629007F5200D06941 /* Build configuration list for PBXProject "FourBrickSIP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B587403229007F5200D06941;
+			productRefGroup = B587403C29007F5200D06941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B587403A29007F5200D06941 /* FourBrickSIP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B587403929007F5200D06941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B587404E29007F5400D06941 /* LaunchScreen.storyboard in Resources */,
+				B587404B29007F5400D06941 /* Assets.xcassets in Resources */,
+				B587404929007F5200D06941 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221FED4C2A1D2DEE132D3608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourBrickSIP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B587403729007F5200D06941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B587408029007FF400D06941 /* GSRingback.m in Sources */,
+				B587408629007FF400D06941 /* GSUserAgent.m in Sources */,
+				B587408F29007FFD00D06941 /* GSConfiguration.m in Sources */,
+				B587405E29007FBD00D06941 /* SIHomeViewController.m in Sources */,
+				B587407F29007FF400D06941 /* GSDispatch.m in Sources */,
+				B587408329007FF400D06941 /* GSIncomingCall.m in Sources */,
+				B587408529007FF400D06941 /* UserAccount.m in Sources */,
+				B587404029007F5200D06941 /* AppDelegate.m in Sources */,
+				B587406029007FBD00D06941 /* SICallViewController.m in Sources */,
+				B587408229007FF400D06941 /* GSCall.m in Sources */,
+				B587408129007FF400D06941 /* GSOutgoingCall.m in Sources */,
+				B587408729007FF400D06941 /* GSCodecInfo.m in Sources */,
+				B587408429007FF400D06941 /* GSNotifications.m in Sources */,
+				B587408829007FF400D06941 /* GSPJUtil.m in Sources */,
+				B587408929007FF400D06941 /* GSAccount.m in Sources */,
+				B587405129007F5400D06941 /* main.m in Sources */,
+				B587409029007FFD00D06941 /* GSAccountConfiguration.m in Sources */,
+				B587405F29007FBD00D06941 /* ipjsuaViewController.m in Sources */,
+				B58740952900811200D06941 /* SICallInitManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B587404729007F5200D06941 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B587404829007F5200D06941 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B587404C29007F5400D06941 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B587404D29007F5400D06941 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B587405229007F5400D06941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B587405329007F5400D06941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B587405529007F5400D06941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D51B3ADF0F97B65F6649811 /* Pods-FourBrickSIP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FourBrickSIP/FourBrickSIP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4E8K62RSX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourBrickSIP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourbrick.sip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B587405629007F5400D06941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F7113C0BC3673DC61530DC /* Pods-FourBrickSIP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FourBrickSIP/FourBrickSIP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4E8K62RSX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FourBrickSIP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourbrick.sip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B587403629007F5200D06941 /* Build configuration list for PBXProject "FourBrickSIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B587405229007F5400D06941 /* Debug */,
+				B587405329007F5400D06941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B587405429007F5400D06941 /* Build configuration list for PBXNativeTarget "FourBrickSIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B587405529007F5400D06941 /* Debug */,
+				B587405629007F5400D06941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B587403329007F5200D06941 /* Project object */;
+}

@@ -47,5 +47,21 @@ class UserAPI {
         }
         dataTask.resume()
     }
+    
+    func fechUserInfo() async throws -> UserInfo {
+        try await withCheckedThrowingContinuation { continuation in
+            fetchUserInfo { userInfo, error in
+                if let userInfo = userInfo {
+                    continuation.resume(returning: userInfo)
+                } else if let error = error {
+                    continuation.resume(throwing: error)
+                } else {
+                    let nsError = NSError(domain: "com.socialmedia.app", code: 400)
+                    continuation.resume(throwing: nsError)
+                }
+            }
+        }
+    }
+    
 }
 

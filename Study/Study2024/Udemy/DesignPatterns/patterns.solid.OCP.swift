@@ -1,5 +1,5 @@
 import Foundation
-
+/*
 enum Color
 {
   case red
@@ -183,5 +183,5 @@ func main()
     print(" - \(p.name) is large and blue")
   }
 }
+*/
 
-main()

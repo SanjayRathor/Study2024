@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bestSellerCollectionViewCell" id="gTV-IL-0wX" customClass="bestSellerCollectionViewCell" customModule="TamimiEcom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-1R-klg">
+                        <rect key="frame" x="0.0" y="5" width="375" height="177"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="BmS-8Q-f32">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIu-VR-ZZu">
+                        <rect key="frame" x="335" y="0.0" width="40" height="187"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7u2-LS-Sn4"/>
+                            <constraint firstAttribute="height" constant="187" id="hZ4-T7-068"/>
+                        </constraints>
+                        <state key="normal" image="right"/>
+                        <connections>
+                            <action selector="rightBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FEx-8J-o6j"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-JQ-Ea0">
+                        <rect key="frame" x="0.0" y="-0.5" width="40" height="188"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="188" id="Mos-6s-SpR"/>
+                            <constraint firstAttribute="width" constant="40" id="mKB-Xn-paL"/>
+                        </constraints>
+                        <state key="normal" image="left"/>
+                        <connections>
+                            <action selector="leftBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="j6C-l7-USU"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="s7P-1R-klg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="0di-lV-tP2"/>
+                <constraint firstAttribute="bottom" secondItem="s7P-1R-klg" secondAttribute="bottom" constant="5" id="9gx-p7-V0b"/>
+                <constraint firstItem="nIu-VR-ZZu" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ArL-cE-zGz"/>
+                <constraint firstAttribute="trailing" secondItem="nIu-VR-ZZu" secondAttribute="trailing" id="bYC-Nu-IsC"/>
+                <constraint firstItem="JkO-JQ-Ea0" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fSw-ZU-XrI"/>
+                <constraint firstAttribute="trailing" secondItem="s7P-1R-klg" secondAttribute="trailing" id="na4-UD-7Wr"/>
+                <constraint firstItem="JkO-JQ-Ea0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oG0-ZM-yZ1"/>
+                <constraint firstItem="s7P-1R-klg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tSv-Ux-dzk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="btnLeft" destination="JkO-JQ-Ea0" id="gjh-xz-TIo"/>
+                <outlet property="btnRight" destination="nIu-VR-ZZu" id="kfE-nN-mF0"/>
+                <outlet property="ctView" destination="s7P-1R-klg" id="Nes-5Y-fIP"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="98.102678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="left" width="18.5" height="18.5"/>
+        <image name="right" width="18.5" height="18.5"/>
+    </resources>
+</document>

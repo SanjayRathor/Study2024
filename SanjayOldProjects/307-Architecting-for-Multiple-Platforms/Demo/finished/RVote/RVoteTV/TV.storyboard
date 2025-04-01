@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="z8t-q6-dif">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote View Controller-->
+        <scene sceneID="5tB-kh-zcB">
+            <objects>
+                <viewController id="z8t-q6-dif" customClass="VoteViewController" customModule="RVoteTV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJF-C0-8TI"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCm-ld-Ihb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="157-P6-rzY">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="900" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sCg-B4-LPK">
+                                <rect key="frame" x="40" y="720" width="1840" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X43-xQ-8ti" customClass="VoteButton" customModule="RVoteKitTV">
+                                        <rect key="frame" x="0.0" y="0.0" width="1840" height="340"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rwdevcon-bg" translatesAutoresizingMaskIntoConstraints="NO" id="egT-O2-NRk">
+                                <rect key="frame" x="40" y="20" width="1840" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="5RP-dJ-ysV"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fin-aj-Krm" customClass="PollBox" customModule="RVoteKitTV">
+                                <rect key="frame" x="40" y="400" width="1840" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7Wl-rv-Uzw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="52"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sCg-B4-LPK" firstAttribute="top" secondItem="fin-aj-Krm" secondAttribute="bottom" constant="20" id="Sid-Ch-SdA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="egT-O2-NRk" secondAttribute="trailing" constant="20" id="UT1-BV-vXj"/>
+                            <constraint firstItem="oCm-ld-Ihb" firstAttribute="top" secondItem="sCg-B4-LPK" secondAttribute="bottom" constant="20" id="Yfq-2e-miM"/>
+                            <constraint firstItem="fin-aj-Krm" firstAttribute="leading" secondItem="157-P6-rzY" secondAttribute="leadingMargin" constant="20" id="ajF-kN-n8E"/>
+                            <constraint firstItem="fin-aj-Krm" firstAttribute="top" secondItem="egT-O2-NRk" secondAttribute="bottom" constant="20" id="dvf-nM-tvH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sCg-B4-LPK" secondAttribute="trailing" constant="20" id="hCq-K9-zgE"/>
+                            <constraint firstItem="egT-O2-NRk" firstAttribute="leading" secondItem="157-P6-rzY" secondAttribute="leadingMargin" constant="20" id="hQW-gg-LkE"/>
+                            <constraint firstItem="egT-O2-NRk" firstAttribute="top" secondItem="aJF-C0-8TI" secondAttribute="bottom" constant="20" id="ijq-Fg-y2t"/>
+                            <constraint firstItem="sCg-B4-LPK" firstAttribute="leading" secondItem="157-P6-rzY" secondAttribute="leadingMargin" constant="20" id="rVE-x1-F5o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fin-aj-Krm" secondAttribute="trailing" constant="20" id="ujf-wv-oUf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="sCg-B4-LPK" id="uEp-KA-Mzj"/>
+                        <outlet property="pollBox" destination="fin-aj-Krm" id="WZd-7N-bn7"/>
+                        <outlet property="pollPic" destination="egT-O2-NRk" id="th5-Fh-Ky9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22O-ox-syr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rwdevcon-bg" width="1104" height="1104"/>
+    </resources>
+</document>

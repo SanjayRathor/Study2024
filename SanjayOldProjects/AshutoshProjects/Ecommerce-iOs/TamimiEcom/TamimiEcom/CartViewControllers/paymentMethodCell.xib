@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SegoeUI-Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="SegoeUI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="paymentMethodCell" id="gTV-IL-0wX" customClass="paymentMethodCell" customModule="TamimiEcom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QF-G8-HLv">
+                        <rect key="frame" x="10" y="15" width="300" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="FjH-c4-lXu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
+                        <color key="textColor" red="0.41568627450980389" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6k-ov-j2K">
+                        <rect key="frame" x="250" y="3" width="70" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="A8v-7z-JXw"/>
+                            <constraint firstAttribute="height" constant="40" id="iK6-zu-4PH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="Clear All">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clearAllAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Ikk-aJ-P4d"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPZ-nz-jOa">
+                        <rect key="frame" x="10" y="40" width="220" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="uIz-rN-0m6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="   Debit Card" image="outline">
+                            <color key="titleColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="   Debit Card" image="outlineS">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="debitCardAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="o9V-Td-2qO"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRQ-p0-IZr">
+                        <rect key="frame" x="10" y="75" width="220" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="z5a-Yb-bkQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="   Credit Card" image="outline">
+                            <color key="titleColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="   Credit Card" image="outlineS">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="credtCardAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8fq-jF-PqE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-GE-iDe">
+                        <rect key="frame" x="10" y="110" width="220" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="XXE-Y2-aJI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="   Cash on Delivery" image="outline">
+                            <color key="titleColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="   Cash on Delivery" image="outlineS">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="cashOnDeliveryAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8i1-FD-71r"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-he-tyu">
+                        <rect key="frame" x="10" y="145" width="90" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="HAs-xL-ilb"/>
+                            <constraint firstAttribute="height" constant="35" id="wax-sl-jbH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="   Gift Card" image="outline">
+                            <color key="titleColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="   Gift Card" image="outlineS">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="giftCardAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="maI-fS-eq8"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65P-Cl-GZt">
+                        <rect key="frame" x="105" y="150" width="205" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-F5-JZe">
+                                <rect key="frame" x="130" y="0.0" width="75" height="25"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ZVv-hR-t4I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                <state key="normal" title="Apply"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="applyAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5yP-7r-oCW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter gift card#" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-rz-anI">
+                                <rect key="frame" x="8" y="0.0" width="114" height="25"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.85882352941176465" blue="0.85882352941176465" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c4z-rz-anI" secondAttribute="bottom" id="1bo-D1-ok3"/>
+                            <constraint firstAttribute="height" constant="25" id="5iU-1F-E3Y"/>
+                            <constraint firstAttribute="bottom" secondItem="U9A-F5-JZe" secondAttribute="bottom" id="6Lj-4M-bGb"/>
+                            <constraint firstItem="U9A-F5-JZe" firstAttribute="top" secondItem="65P-Cl-GZt" secondAttribute="top" id="Eea-oO-QaK"/>
+                            <constraint firstItem="c4z-rz-anI" firstAttribute="top" secondItem="65P-Cl-GZt" secondAttribute="top" id="IA4-OP-BUY"/>
+                            <constraint firstItem="c4z-rz-anI" firstAttribute="leading" secondItem="65P-Cl-GZt" secondAttribute="leading" constant="8" id="SGz-76-1rF"/>
+                            <constraint firstAttribute="trailing" secondItem="U9A-F5-JZe" secondAttribute="trailing" id="TDN-15-SjA"/>
+                            <constraint firstItem="U9A-F5-JZe" firstAttribute="centerY" secondItem="65P-Cl-GZt" secondAttribute="centerY" id="e2H-Jr-Sfz"/>
+                            <constraint firstItem="U9A-F5-JZe" firstAttribute="leading" secondItem="c4z-rz-anI" secondAttribute="trailing" constant="8" id="tUk-lh-XJW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSw-No-aX1">
+                        <rect key="frame" x="10" y="180" width="230" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="2Gl-3f-kSi"/>
+                            <constraint firstAttribute="width" constant="230" id="ovn-LU-1JD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <state key="normal" title="   Use my e-wallet available balance first" image="outline">
+                            <color key="titleColor" red="0.41568627450000001" green="0.42745098040000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="   Use my e-wallet available balance first" image="outlineS">
+                            <color key="titleColor" red="0.93333333330000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="eWalletAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="07I-mO-078"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="151.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlN-Gi-wI4">
+                        <rect key="frame" x="243" y="188" width="50" height="19"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="Ig4-pw-nGb"/>
+                            <constraint firstAttribute="width" constant="50" id="LhD-0k-sQX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-63-oIJ">
+                        <rect key="frame" x="297" y="187" width="25" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="KBu-nB-Etq"/>
+                            <constraint firstAttribute="height" constant="21" id="zAu-0c-meo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PsU-GE-iDe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="29G-Nk-gMr"/>
+                <constraint firstItem="lPZ-nz-jOa" firstAttribute="top" secondItem="5QF-G8-HLv" secondAttribute="bottom" constant="10" id="2ia-tc-Jz5"/>
+                <constraint firstItem="nlN-Gi-wI4" firstAttribute="top" secondItem="65P-Cl-GZt" secondAttribute="bottom" constant="13" id="3dl-wL-wc6"/>
+                <constraint firstItem="cdE-he-tyu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3fH-6h-Ran"/>
+                <constraint firstItem="uRQ-p0-IZr" firstAttribute="top" secondItem="lPZ-nz-jOa" secondAttribute="bottom" id="Axj-RZ-0oJ"/>
+                <constraint firstItem="U6k-ov-j2K" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="IrE-jQ-bvj"/>
+                <constraint firstItem="cdE-he-tyu" firstAttribute="top" secondItem="PsU-GE-iDe" secondAttribute="bottom" id="JuW-G4-Uc4"/>
+                <constraint firstItem="5QF-G8-HLv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Kzk-8g-EIb"/>
+                <constraint firstAttribute="trailing" secondItem="lPZ-nz-jOa" secondAttribute="trailing" constant="90" id="L5R-n0-qmb"/>
+                <constraint firstItem="FSw-No-aX1" firstAttribute="top" secondItem="cdE-he-tyu" secondAttribute="bottom" id="Nvp-bA-gKy"/>
+                <constraint firstAttribute="trailing" secondItem="uRQ-p0-IZr" secondAttribute="trailing" constant="90" id="Q0v-GL-UwQ"/>
+                <constraint firstItem="nlN-Gi-wI4" firstAttribute="leading" secondItem="FSw-No-aX1" secondAttribute="trailing" constant="3" id="QuT-Lq-5jt"/>
+                <constraint firstItem="PsU-GE-iDe" firstAttribute="top" secondItem="uRQ-p0-IZr" secondAttribute="bottom" id="aNx-En-t39"/>
+                <constraint firstItem="FSw-No-aX1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="b8c-Yu-8AX"/>
+                <constraint firstItem="lPZ-nz-jOa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dox-H0-Qag"/>
+                <constraint firstItem="wVk-63-oIJ" firstAttribute="leading" secondItem="nlN-Gi-wI4" secondAttribute="trailing" constant="4" id="fqd-uA-sFT"/>
+                <constraint firstAttribute="trailing" secondItem="5QF-G8-HLv" secondAttribute="trailing" constant="10" id="hGg-Uc-10t"/>
+                <constraint firstItem="65P-Cl-GZt" firstAttribute="top" secondItem="PsU-GE-iDe" secondAttribute="bottom" constant="5" id="j44-Be-mGe"/>
+                <constraint firstItem="wVk-63-oIJ" firstAttribute="top" secondItem="65P-Cl-GZt" secondAttribute="bottom" constant="12" id="l5Q-Lg-Imp"/>
+                <constraint firstAttribute="trailing" secondItem="65P-Cl-GZt" secondAttribute="trailing" constant="10" id="med-ZS-eAE"/>
+                <constraint firstItem="5QF-G8-HLv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="oCj-7j-bXe"/>
+                <constraint firstItem="65P-Cl-GZt" firstAttribute="leading" secondItem="cdE-he-tyu" secondAttribute="trailing" constant="5" id="oDk-GO-0f1"/>
+                <constraint firstAttribute="trailing" secondItem="U6k-ov-j2K" secondAttribute="trailing" id="oIM-fA-Qx4"/>
+                <constraint firstItem="uRQ-p0-IZr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="v48-ua-Q17"/>
+                <constraint firstAttribute="trailing" secondItem="PsU-GE-iDe" secondAttribute="trailing" constant="90" id="vXX-FB-UCk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="btnApply" destination="U9A-F5-JZe" id="XKq-8h-7vq"/>
+                <outlet property="btnCashOnDeliver" destination="PsU-GE-iDe" id="0Ck-vM-UQw"/>
+                <outlet property="btnClearAll" destination="U6k-ov-j2K" id="O3V-lP-Hbp"/>
+                <outlet property="btnCreditCard" destination="uRQ-p0-IZr" id="EsW-Qa-C9L"/>
+                <outlet property="btnDebitCard" destination="lPZ-nz-jOa" id="Tfa-In-OGe"/>
+                <outlet property="btnGiftCard" destination="cdE-he-tyu" id="QiF-38-j4f"/>
+                <outlet property="btnUseWallet" destination="FSw-No-aX1" id="a4f-tj-03M"/>
+                <outlet property="lblAmmount" destination="nlN-Gi-wI4" id="si6-ns-bYk"/>
+                <outlet property="lblAmountHint" destination="wVk-63-oIJ" id="dvZ-EH-8Nb"/>
+                <outlet property="txtFieldGiftCard" destination="c4z-rz-anI" id="SBG-CW-aYy"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="outline" width="13" height="13"/>
+        <image name="outlineS" width="13" height="13"/>
+    </resources>
+</document>
